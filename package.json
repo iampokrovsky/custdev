@@ -20,6 +20,7 @@
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-cheerio": "^1.0.0",
+    "gulp-concat": "^2.6.1",
     "gulp-csscomb": "^3.1.0",
     "gulp-csso": "^4.0.1",
     "gulp-htmlmin": "^5.0.1",
@@ -43,7 +44,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp autocss"
+    "start": "gulp build && gulp server"
   },
   "browserslist": [
     "last 2 versions",

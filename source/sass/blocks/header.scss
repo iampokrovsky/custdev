@@ -1,0 +1,17 @@
+.header__container {
+  box-sizing: border-box;
+  min-height: 734px;
+  border-bottom: 1px solid black;
+  position: relative;
+  padding: 30px 8px 0;
+
+  background-image: url("../img/header-photo-bg-mobile@1x.png"),
+    url("../img/header-bg.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  @media (min-resolution: 1.5dppx) {
+    background-image: url("../img/header-photo-bg-mobile@1x.png"),
+      url("../img/header-bg.svg");
+  }
+}

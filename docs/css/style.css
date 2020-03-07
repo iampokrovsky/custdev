@@ -1,0 +1,65 @@
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "montserrat-regular";
+
+  font-display: swap;
+  src: url("../fonts/montserrat-regular.woff2") format("woff2"), url("../fonts/montserrat-regular.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "montserrat-semibold";
+
+  font-display: swap;
+  src: url("../fonts/montserrat-semibold.woff2") format("woff2"), url("../fonts/montserrat-semibold.woff") format("woff");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: normal;
+  font-family: "montserrat-bold";
+
+  font-display: swap;
+  src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
+}
+
+.button {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 14px 20px;
+
+  font-size: 14px;
+  line-height: 1.5em;
+  font-family: "montserrat-bold", "Arial", sans-serif;
+  vertical-align: center;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: none;
+  background-color: #52d1bc;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  -webkit-transition: 0.1s ease-in-out;
+
+  transition: 0.1s ease-in-out;
+}
+
+.button--bordered {
+  border: 14px solid rgba(82, 209, 188, 0.5);
+}
+
+.container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 320px;
+  min-width: 320px;
+  max-width: 1150px;
+  margin: 0 auto;
+}

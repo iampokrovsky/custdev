@@ -1,0 +1,41 @@
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 14px 20px;
+
+  vertical-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background: none;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+
+  transition: 0.1s ease-in-out;
+
+  @include bold(14px, 1.5em, #ffffff);
+
+  &--fill {
+    background-color: $lightgreen;
+  }
+
+  &--bordered {
+    background-color: $lightgreen;
+    background-clip: padding-box;
+    border: 14px solid rgba(82, 209, 188, 0.5);
+  }
+
+  // &--border:hover {
+  //   color: #ffffff;
+
+  //   background-color: #444444;
+  // }
+
+  // &--border:active {
+  //   color: rgba(255, 255, 255, 0.3);
+
+  //   background-color: #444444;
+  // }
+}

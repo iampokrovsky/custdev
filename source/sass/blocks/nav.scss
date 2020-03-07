@@ -1,0 +1,51 @@
+.nav {
+  display: flex;
+}
+
+.nav__cities {
+  display: none;
+}
+
+.nav__list {
+  @include list-reset;
+  box-sizing: border-box;
+  position: absolute;
+  top: 8px;
+  right: 2px;
+  width: 190px;
+  background: rgba($darkblue, 0.85);
+  padding: 22px 35px 20px 10px;
+  border-radius: 10px;
+  display: none;
+}
+
+.nav__item {
+  @include regular(14px, 1.436em, #ffffff);
+  box-sizing: border-box;
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.nav__join-button {
+  @include regular(14px, 1.436em, #ffffff);
+  box-sizing: border-box;
+  display: block;
+  background: none;
+  border: none;
+  padding: 0;
+  text-transform: none;
+}
+
+.nav__menu-button {
+  box-sizing: border-box;
+  background: none;
+  border: none;
+  width: 30px;
+  height: 23px;
+  position: absolute;
+  top: 25px;
+  right: 8px;
+  background-image: url("../img/icon-menu.svg");
+  background-position: 0 0;
+}
