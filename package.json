@@ -1,7 +1,7 @@
 {
-  "name": "custdev",
+  "name": "fondsavva",
   "version": "1.0.0",
-  "description": "Лэндинг с адаптивным дизайном",
+  "description": "",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
@@ -43,7 +43,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
     "test": "npm run editorconfig && npm run stylelint",
     "build": "gulp build",
-    "start": "gulp build && gulp server"
+    "start": "gulp autocss"
   },
   "browserslist": [
     "last 2 versions",
