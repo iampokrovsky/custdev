@@ -1,9 +1,8 @@
 .header__container {
-  box-sizing: border-box;
-  min-height: 734px;
-  border-bottom: 1px solid black;
   position: relative;
-  padding: 30px 8px 0;
+
+  box-sizing: border-box;
+  padding: 30px 8px;
 
   background-image: url("../img/header-photo-bg-mobile@1x.png"),
     url("../img/header-bg.svg");

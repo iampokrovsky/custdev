@@ -1,7 +1,7 @@
 .button {
   display: block;
   box-sizing: border-box;
-  padding: 14px 20px;
+  padding: 14px 35px;
 
   vertical-align: center;
   text-align: center;
@@ -15,16 +15,10 @@
 
   transition: 0.1s ease-in-out;
 
-  @include bold(14px, 1.5em, #ffffff);
+  @include bold(14px, 1.5em, $white);
 
   &--fill {
     background-color: $lightgreen;
-  }
-
-  &--bordered {
-    background-color: $lightgreen;
-    background-clip: padding-box;
-    border: 14px solid rgba(82, 209, 188, 0.5);
   }
 
   // &--border:hover {

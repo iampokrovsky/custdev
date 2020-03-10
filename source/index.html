@@ -15,20 +15,21 @@
 <body class="body">
   <header class="header">
     <div class="header__container container">
-      <nav class="nav">
+      <nav class="nav nav--no-js">
         <ul class="nav__cities">
           <li class="nav__city main-nav__city--current">Санкт-Петербург</li>
           <li class="nav__city main-nav__city">Москва</li>
           <li class="nav__city main-nav__city">Минск</li>
         </ul>
-        <ul class="nav__list">
-          <li class="nav__item">Программа</li>
-          <li class="nav__item">Отзывы</li>
-          <li class="nav__item">Стоимость</li>
-          <li class="nav__item">О преподавателе</li>
+        <ul class="nav__list nav__list--no-js">
+          <li class="nav__item"><a href="" class="nav__link">Программа</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Отзывы</a></li>
+          <li class="nav__item"><a href="" class="nav__link">Стоимость</a></li>
+          <li class="nav__item"><a href="" class="nav__link">О преподавателе</a></li>
         </ul>
         <a href="" class="nav__join-button button">Запись на курс</a>
-        <button class="nav__menu-button"><span class="visually-hidden">Меню</span></button>
+        <button class="nav__menu-button nav__menu-button--no-js"><span class="visually-hidden">Открыть/закрыть
+            меню</span></button>
       </nav>
 
       <section class="promo">
@@ -69,26 +70,23 @@
       <h1 class="visually-hidden">Курс по Customer Development</h1>
 
       <section class="statistics">
-        <h2 class="statistics__heading">Если вы не делаете Customer Development — вы не управляете движением к
-          product-market fit</h2>
+        <h2 class="statistics__heading">Если вы не делаете Customer Development — вы не управляете движением к product-market fit</h2>
         <ul class="statistics__points">
-          <li class="statistics__point">
+          <li class="statistics__point" style="z-index: -10;">
             <b class="statistics__rate">94%</b>
             стартапов умирают в течение 3 лет, и главная причина этого — отсутствие product-market fit
           </li>
-          <li class="statistics__point">
+          <li class="statistics__point" style="z-index: -9;">
             <b class="statistics__rate">менее 50%</b>
             тестируемых Amazon функций реально запускаются после проверки гипотез
           </li>
-          <li class="statistics__point">
+          <li class="statistics__point" style="z-index: -8;">
             <b class="statistics__rate">только 50%</b>
             компаний по результатам исследования SaaS проводят многовариантные A / B тестирования
           </li>
-          <li class="statistics__point">
+          <li class="statistics__point" style="z-index: -7;">
             <b class="statistics__rate">от 40 до 90%</b>
-            новых продуктов не получают значительного признания на рынке, так как строятся на основе творчества,
-            интуиции
-            и интеллекта
+            новых продуктов не получают значительного признания на рынке, так как строятся на основе творчества, интуиции и интеллекта
           </li>
         </ul>
       </section>
@@ -393,8 +391,9 @@
         </div>
       </section>
     </div>
-
   </footer>
+
+  <script src="./js/menu.min.js"></script>
 </body>
 
 </html>

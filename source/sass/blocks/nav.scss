@@ -1,5 +1,11 @@
 .nav {
   display: flex;
+  box-sizing: border-box;
+  margin-bottom: 72px;
+
+  &--no-js {
+    margin-bottom: 160px;
+  }
 }
 
 .nav__cities {
@@ -7,45 +13,165 @@
 }
 
 .nav__list {
-  @include list-reset;
   box-sizing: border-box;
-  position: absolute;
-  top: 8px;
-  right: 2px;
-  width: 190px;
-  background: rgba($darkblue, 0.85);
-  padding: 22px 35px 20px 10px;
-  border-radius: 10px;
-  display: none;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .nav__item {
-  @include regular(14px, 1.436em, #ffffff);
   box-sizing: border-box;
-  &:not(:last-child) {
-    margin-bottom: 20px;
-  }
+}
+
+.nav__link {
+  box-sizing: border-box;
+
+  text-decoration: none;
 }
 
 .nav__join-button {
-  @include regular(14px, 1.436em, #ffffff);
-  box-sizing: border-box;
   display: block;
+  box-sizing: border-box;
+  padding: 0;
+
+  text-transform: none;
+
   background: none;
   border: none;
-  padding: 0;
-  text-transform: none;
+
+  @include regular(14px, 1.436em, $white);
 }
 
-.nav__menu-button {
-  box-sizing: border-box;
-  background: none;
-  border: none;
-  width: 30px;
-  height: 23px;
-  position: absolute;
-  top: 25px;
-  right: 8px;
-  background-image: url("../img/icon-menu.svg");
-  background-position: 0 0;
+@media (max-width: $desktop-width) {
+  @keyframes bubble {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(12);
+    }
+  }
+
+  @keyframes opacify {
+    from {
+      color: rgba($blue, 0);
+    }
+
+    to {
+      color: rgba($blue, 1);
+    }
+  }
+
+  .nav__list {
+    position: absolute;
+    top: 10px;
+    right: 2px;
+    z-index: 0;
+
+    display: none;
+    padding: 20px 35px 20px 10px;
+    overflow: hidden;
+
+    color: $blue;
+
+    border-radius: 10px;
+
+    &--open {
+      animation: opacify;
+      animation-duration: 0.15s;
+      animation-delay: 0.15s;
+
+      animation-fill-mode: both;
+    }
+
+    &--close {
+      animation: opacify;
+      animation-duration: 0.15s;
+      animation-direction: reverse;
+
+      animation-fill-mode: both;
+    }
+
+    &--visible {
+      display: block;
+    }
+
+    &--no-js {
+      display: block;
+
+      color: $white;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 0;
+      z-index: -1;
+
+      display: none;
+      box-sizing: border-box;
+      width: 42px;
+      height: 42px;
+
+      background-color: $white;
+      border-radius: 50%;
+      transform: scale(12);
+    }
+
+    &--visible::before {
+      display: block;
+    }
+
+    &--open::before {
+      animation-name: bubble;
+      animation-duration: 0.3s;
+
+      animation-fill-mode: both;
+    }
+
+    &--close::before {
+      animation-name: bubble;
+      animation-duration: 0.3s;
+      animation-direction: reverse;
+
+      animation-fill-mode: both;
+    }
+  }
+
+  .nav__link {
+    @include regular(14px, 143.6%, inherit);
+  }
+
+  .nav__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .nav__menu-button {
+    position: absolute;
+    top: 22px;
+    right: 8px;
+
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+
+    background: none;
+    background-image: url("../img/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+    &--close {
+      background-image: url("../img/icon-menu-close.svg");
+    }
+
+    &--no-js {
+      background: none;
+    }
+  }
 }

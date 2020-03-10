@@ -29,24 +29,17 @@
 }
 
 @mixin regular($font-size, $line-height, $color) {
-  font-size: 14px;
   font-size: $font-size;
-  line-height: 143.6%;
   line-height: $line-height;
   font-family: "montserrat-regular", "Arial", sans-serif;
-  color: #636363;
   color: $color;
 }
 
-@mixin semibold($font-size, $line-height, $color, $letter-spacing) {
-  font-size: 14px;
+@mixin semibold($font-size, $line-height, $color) {
   font-size: $font-size;
   line-height: $line-height;
   font-family: "montserrat-semibold", "Arial", sans-serif;
-  color: #2f80ed;
   color: $color;
-  letter-spacing: 5%;
-  letter-spacing: $letter-spacing;
 }
 
 @mixin bold($font-size, $line-height, $color) {

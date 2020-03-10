@@ -1,0 +1,133 @@
+.promo__invite {
+  box-sizing: border-box;
+  margin-bottom: 54px;
+}
+
+.promo__place-n-date {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+
+  text-transform: uppercase;
+  letter-spacing: 5%;
+
+  @include regular(12px, 124.4%, $white);
+}
+
+.promo__slogan {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 44px;
+  padding: 0;
+
+  @include bold(24px, 124.4%, $white);
+}
+
+.promo__note {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+
+  @include regular(14px, 124.4%, $white);
+}
+
+.promo__join-button {
+  min-width: 223px;
+
+  background-color: $lightgreen;
+  background-clip: padding-box;
+  border: 14px solid rgba(82, 209, 188, 0.5);
+}
+
+.promo__reviews-list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.promo__review {
+  box-sizing: border-box;
+  width: 231px;
+  height: 231px;
+  margin: 0 auto;
+  padding: 40px;
+  padding-top: 45px;
+  overflow: hidden;
+
+  text-align: center;
+
+  background-color: $white;
+  background-image: url("../img/promo-review-circle-bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.promo__review-content {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+}
+
+.promo__review-text {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 2px;
+
+  @include regular(14px, 150%, $blue);
+}
+
+.promo__review-rate {
+  display: block;
+  box-sizing: border-box;
+
+  @include bold(34px, 150%, $blue);
+}
+
+.promo__review-author {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 4px;
+
+  text-align: center;
+}
+
+.promo__review-name {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 2px;
+
+  font-style: normal;
+
+  @include regular(14px, 150%, $blue);
+}
+
+.promo__review-company {
+  display: block;
+  box-sizing: border-box;
+
+  font-style: normal;
+
+  @include bold(14px, 150%, $blue);
+}
+
+.promo__review-link {
+  display: block;
+  box-sizing: border-box;
+  width: 84px;
+  margin: 0 auto;
+
+  text-decoration: none;
+
+  background: url("../img/arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+
+  @include regular(10px, 150%, $blue);
+}
