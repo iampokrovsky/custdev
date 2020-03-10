@@ -1,0 +1,41 @@
+.statistics {
+  box-sizing: border-box;
+  padding: 8px 8px 56px;
+}
+
+.statistics__heading {
+  box-sizing: border-box;
+  margin-bottom: 60px;
+
+  text-align: center;
+
+  @include bold(24px, 124.41%, $black);
+}
+
+.statistics__points {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0 12px;
+
+  list-style: none;
+}
+
+.statistics__point {
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  padding: 50px;
+  background-color: $white;
+
+  border-radius: 10px;
+  box-shadow: 0px 30px 100px rgba(47, 55, 237, 0.1);
+
+  @include regular(14px, 143.55%, $lightgrey);
+}
+
+.statistics__rate {
+  display: block;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+
+  @include bold(24px, 143.55%, $blue);
+}
