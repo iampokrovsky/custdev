@@ -40,7 +40,7 @@
   background: none;
   border: none;
 
-  @include regular(14px, 1.436em, $white);
+  @include regular(14px, 1.44em, $white);
 }
 
 @media (max-width: $desktop-width) {
@@ -142,7 +142,7 @@
   }
 
   .nav__link {
-    @include regular(14px, 1.436em, inherit);
+    @include regular(14px, 1.44em, inherit);
   }
 
   .nav__item {

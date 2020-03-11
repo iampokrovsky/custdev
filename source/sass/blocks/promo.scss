@@ -11,7 +11,7 @@
   text-transform: uppercase;
   letter-spacing: 5%;
 
-  @include regular(12px, 1.244em, $white);
+  @include regular(12px, 1.25em, $white);
 }
 
 .promo__slogan {
@@ -19,7 +19,7 @@
   margin: 0;
   margin-bottom: 44px;
 
-  @include bold(24px, 1.244em, $white);
+  @include bold(24px, 1.25em, $white);
 }
 
 .promo__note {
@@ -27,7 +27,7 @@
   margin: 0;
   margin-bottom: 30px;
 
-  @include regular(14px, 1.244em, $white);
+  @include regular(14px, 1.25em, $white);
 }
 
 .promo__join-button {
@@ -58,7 +58,7 @@
   text-align: center;
 
   background-color: $white;
-  background-image: url("../img/promo-review-circle-bg.svg");
+  background-image: url("../img/bg-header-ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -124,5 +124,6 @@
   background: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: center right;
+
   @include regular(10px, 1.5em, $blue);
 }

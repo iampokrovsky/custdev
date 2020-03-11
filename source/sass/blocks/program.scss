@@ -1,0 +1,71 @@
+.program {
+  box-sizing: border-box;
+  padding: 78px 8px 64px;
+}
+
+.program__heading {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 78px;
+
+  text-align: center;
+
+  @include bold(24px, 1.25em, $black);
+}
+
+.program__content-wrapper {
+  box-sizing: border-box;
+  padding-left: 62px;
+  padding-right: 12px;
+}
+
+.program__list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 32px;
+
+  list-style: none;
+}
+
+.program__item {
+  box-sizing: border-box;
+
+  &:not(:last-child) {
+    margin-bottom: 42px;
+  }
+}
+
+.program__point {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @include regular(14px, 1.44em, $blue);
+}
+
+.program__description {
+  box-sizing: border-box;
+  margin: 0;
+
+  @include regular(14px, 1.44em, $lightgrey);
+}
+
+.program__link {
+  box-sizing: border-box;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  border-bottom: 1px dashed $blue;
+
+  @include regular(14px, 2em, $blue);
+}
+
+.program__benefits {
+  display: none;
+}

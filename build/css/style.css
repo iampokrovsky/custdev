@@ -70,15 +70,9 @@
           box-sizing: border-box;
   padding: 30px 8px;
 
-  background-image: url("../img/bg-mobile-header-photo@1x.png"), url("../img/bg-mobile-header.svg");
+  background-image: url("../img/bg-header-photo-mobile.png"), url("../img/bg-mobile-header.svg");
   background-repeat: no-repeat;
   background-position: -480px -480px, -480px -480px;
-}
-
-@media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-  .header__container {
-    background-image: url("../img/bg-mobile-header-photo@2x.png"), url("../img/bg-mobile-header.svg");
-  }
 }
 
 .nav {
@@ -316,13 +310,14 @@
 .program {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 70px 8px 0;
+  padding: 78px 8px 64px;
 }
 
 .program__heading {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  margin-bottom: 78px;
 
   font-size: 24px;
   line-height: 1.244em;
@@ -331,16 +326,44 @@
   color: #000000;
 }
 
+.program__content-wrapper {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-right: 12px;
+  padding-left: 62px;
+}
+
+.program__list {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.program__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.program__item:not(:last-child) {
+  margin-bottom: 42px;
+}
+
 .program__point {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  margin-bottom: 10px;
 
   font-weight: 600;
   font-size: 14px;
   line-height: 1.436em;
   font-family: "montserrat-regular", "Arial", sans-serif;
   color: #2f80ed;
+  text-transform: uppercase;
   letter-spacing: 0.05em;
 }
 
@@ -355,7 +378,7 @@
   color: #636363;
 }
 
-.program__watch-full {
+.program__link {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 
@@ -365,11 +388,10 @@
   font-family: "montserrat-regular", "Arial", sans-serif;
   color: #2f80ed;
   text-transform: uppercase;
+  text-decoration: none;
   letter-spacing: 0.05em;
 
-  -webkit-text-decoration-style: dashed;
-
-          text-decoration-style: dashed;
+  border-bottom: 1px dashed #2f80ed;
 }
 
 .program__benefits {
@@ -450,7 +472,7 @@
   text-align: center;
 
   background-color: #ffffff;
-  background-image: url("../img/promo-review-circle-bg.svg");
+  background-image: url("../img/bg-header-ellipse.svg");
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
@@ -539,20 +561,27 @@
   background-position: center right;
 }
 
+.result__heading {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  @INCLUDE;
+}
+
 .statistics {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 28px 8px 66px;
+  padding: 26px 8px 66px;
 }
 
 .statistics__heading {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 66px;
 
   font-size: 24px;
-  line-height: 1.244em;
+  line-height: 1.25em;
   font-family: "montserrat-bold", "Arial", sans-serif;
   text-align: center;
   color: #000000;
@@ -570,7 +599,8 @@
 .statistics__point {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 50px;
+  min-height: 235px;
+  padding: 40px 22px 20px 50px;
 
   font-size: 14px;
   line-height: 1.436em;
@@ -620,7 +650,7 @@
 .who-needs {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 68px 70px;
+  padding: 68px 40px 78px 70px;
 
   background-image: url("../img/bg-who-needs.svg");
   background-repeat: no-repeat;
@@ -631,10 +661,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 
   font-size: 24px;
-  line-height: 1.244em;
+  line-height: 1.25em;
   font-family: "montserrat-bold", "Arial", sans-serif;
   color: #000000;
 }
@@ -642,6 +672,7 @@
 .who-needs__list {
   margin: 0;
   padding: 0;
+  padding-right: 32px;
 
   list-style: none;
 }
@@ -652,7 +683,7 @@
 }
 
 .who-needs__item:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 }
 
 .who-needs__item-heading {

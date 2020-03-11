@@ -1,6 +1,5 @@
-.body {
+.result__heading {
   box-sizing: border-box;
   margin: 0;
-
-  background-color: $white;
+  @include bold()
 }
