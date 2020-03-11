@@ -4,13 +4,14 @@
   box-sizing: border-box;
   padding: 30px 8px;
 
-  background-image: url("../img/header-photo-bg-mobile@1x.png"),
-    url("../img/header-bg.svg");
+  background-image: url("../img/bg-mobile-header-photo@1x.png"),
+    url("../img/bg-mobile-header.svg");
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: -480px -480px, -480px -480px;
+
 
   @media (min-resolution: 1.5dppx) {
-    background-image: url("../img/header-photo-bg-mobile@1x.png"),
-      url("../img/header-bg.svg");
+    background-image: url("../img/bg-mobile-header-photo@2x.png"),
+      url("../img/bg-mobile-header.svg");
   }
 }
