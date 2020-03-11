@@ -11,16 +11,6 @@
 @font-face {
   font-style: normal;
   font-weight: normal;
-  font-family: "montserrat-semibold";
-
-  font-display: swap;
-  src: url("../fonts/montserrat-semibold.woff2") format("woff2"),
-    url("../fonts/montserrat-semibold.woff") format("woff");
-}
-
-@font-face {
-  font-style: normal;
-  font-weight: normal;
   font-family: "montserrat-bold";
 
   font-display: swap;
@@ -32,13 +22,6 @@
   font-size: $font-size;
   line-height: $line-height;
   font-family: "montserrat-regular", "Arial", sans-serif;
-  color: $color;
-}
-
-@mixin semibold($font-size, $line-height, $color) {
-  font-size: $font-size;
-  line-height: $line-height;
-  font-family: "montserrat-semibold", "Arial", sans-serif;
   color: $color;
 }
 

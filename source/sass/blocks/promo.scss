@@ -7,30 +7,27 @@
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 26px;
-  padding: 0;
 
   text-transform: uppercase;
   letter-spacing: 5%;
 
-  @include regular(12px, 124.4%, $white);
+  @include regular(12px, 1.244em, $white);
 }
 
 .promo__slogan {
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 44px;
-  padding: 0;
 
-  @include bold(24px, 124.4%, $white);
+  @include bold(24px, 1.244em, $white);
 }
 
 .promo__note {
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 30px;
-  padding: 0;
 
-  @include regular(14px, 124.4%, $white);
+  @include regular(14px, 1.244em, $white);
 }
 
 .promo__join-button {
@@ -70,7 +67,6 @@
 .promo__review-content {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
 
   text-align: center;
 }
@@ -80,14 +76,14 @@
   box-sizing: border-box;
   margin-bottom: 2px;
 
-  @include regular(14px, 150%, $blue);
+  @include regular(14px, 1.5em, $blue);
 }
 
 .promo__review-rate {
   display: block;
   box-sizing: border-box;
 
-  @include bold(34px, 150%, $blue);
+  @include bold(34px, 1.5em, $blue);
 }
 
 .promo__review-author {
@@ -105,7 +101,7 @@
 
   font-style: normal;
 
-  @include regular(14px, 150%, $blue);
+  @include regular(14px, 1.5em, $blue);
 }
 
 .promo__review-company {
@@ -114,7 +110,7 @@
 
   font-style: normal;
 
-  @include bold(14px, 150%, $blue);
+  @include bold(14px, 1.5em, $blue);
 }
 
 .promo__review-link {
@@ -128,6 +124,5 @@
   background: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-position: center right;
-
-  @include regular(10px, 150%, $blue);
+  @include regular(10px, 1.5em, $blue);
 }

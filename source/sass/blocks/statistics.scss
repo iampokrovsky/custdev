@@ -1,15 +1,16 @@
 .statistics {
   box-sizing: border-box;
-  padding: 8px 8px 56px;
+  padding: 28px 8px 66px;
 }
 
 .statistics__heading {
   box-sizing: border-box;
+  margin: 0;
   margin-bottom: 60px;
 
   text-align: center;
 
-  @include bold(24px, 124.41%, $black);
+  @include bold(24px, 1.244em, $black);
 }
 
 .statistics__points {
@@ -22,14 +23,17 @@
 
 .statistics__point {
   box-sizing: border-box;
-  margin-bottom: 10px;
   padding: 50px;
 
   background-color: $white;
   border-radius: 10px;
   box-shadow: 0 30px 100px rgba(47, 55, 237, 0.1);
 
-  @include regular(14px, 143.55%, $lightgrey);
+  @include regular(14px, 1.436em, $lightgrey);
+  
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
 }
 
 .statistics__rate {
@@ -37,5 +41,5 @@
   box-sizing: border-box;
   margin-bottom: 14px;
 
-  @include bold(24px, 143.55%, $blue);
+  @include bold(24px, 1.436em, $blue);
 }
