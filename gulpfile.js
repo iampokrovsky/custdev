@@ -130,7 +130,7 @@ gulp.task("img", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("./source/img/*.{png,jpg}")
+  return gulp.src(["./source/img/*.{png,jpg}", "!./source/img/bg-*.{png,jpg}"])
     .pipe(webp({ quality: 60 }))
     .pipe(gulp.dest("./build/img"));
 });
