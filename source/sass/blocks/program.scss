@@ -1,6 +1,7 @@
 .program {
   box-sizing: border-box;
   padding: 78px 8px 64px;
+  padding-bottom: 62px;
 }
 
 .program__heading {
@@ -15,15 +16,15 @@
 
 .program__content-wrapper {
   box-sizing: border-box;
-  padding-left: 62px;
   padding-right: 12px;
+  padding-left: 62px;
 }
 
 .program__list {
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   margin-bottom: 32px;
+  padding: 0;
 
   list-style: none;
 }
@@ -57,10 +58,12 @@
 
 .program__link {
   box-sizing: border-box;
+
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
   text-decoration: none;
+  letter-spacing: 0.05em;
+
   border-bottom: 1px dashed $blue;
 
   @include regular(14px, 2em, $blue);
