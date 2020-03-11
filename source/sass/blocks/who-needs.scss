@@ -1,0 +1,49 @@
+.who-needs {
+  box-sizing: border-box;
+  padding: 68px 70px;
+
+  background-image: url("../img/bg-who-needs.svg");
+  background-repeat: no-repeat;
+  background-position: -107px 18px;
+}
+
+.who-needs__heading {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @include bold(24px, 1.244em, $black);
+}
+
+.who-needs__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.who-needs__item {
+  box-sizing: border-box;
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.who-needs__item-heading {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 10px;
+
+  text-transform: uppercase;
+
+  @include regular(14px, 1.436em, $blue);
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+.who-needs__item-description {
+  box-sizing: border-box;
+  margin: 0;
+
+  @include regular(14px, 1.436em, $lightgrey);
+}
