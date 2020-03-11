@@ -1,0 +1,120 @@
+.about-teacher {
+  box-sizing: border-box;
+  padding: 50px 8px;
+}
+
+.about-teacher__heading {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 40px;
+
+  text-align: center;
+
+  @include bold(24px, 1.25em, $black);
+}
+
+.about-teacher__video {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  width: 304px;
+  height: 228px;
+  margin: 0 auto;
+  overflow: hidden;
+  margin-bottom: 74px;
+
+  border-radius: 10px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 70px;
+    height: 70px;
+
+    background-image: url("../img/play-button.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+
+    transition: 0.2s ease-in-out;
+  }
+
+  &:hover::before {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
+}
+
+.about-teacher__video-image {
+  width: 304px;
+  height: 228px;
+}
+
+.about-teacher__badge {
+  display: none;
+}
+
+.about-teacher__features {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-left: 62px;
+  padding-right: 42px;
+
+  list-style: none;
+}
+
+.about-teacher__feature {
+  box-sizing: border-box;
+  padding-top: 92px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  &:not(:last-child) {
+    margin-bottom: 44px;
+  }
+
+  &--experience {
+    background-image: url("../img/icon-exp.svg");
+    background-size: 85px 70px;
+  }
+
+  &--students {
+    background-image: url("../img/icon-students.svg");
+    background-size: 83px 70px;
+  }
+
+  &--bot {
+    background-image: url("../img/icon-bot.svg");
+    background-size: 95px 70px;
+  }
+
+  &--top {
+    background-image: url("../img/icon-top.svg");
+    background-size: 94px 70px;
+  }
+}
+
+.about-teacher__feature-heading {
+  box-sizing: border-box;
+  margin: 0;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 14px;
+
+  @include regular(14px, 1.44em, $blue);
+}
+
+.about-teacher__feature-description {
+  box-sizing: border-box;
+  margin: 0;
+
+  @include regular(16px, 1.44em, $lightgrey);
+}

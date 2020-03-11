@@ -106,6 +106,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/*.html").on("change", gulp.series("html", server.reload));
   gulp.watch("source/js/**/*.js").on("change", gulp.series("scripts", server.reload));
+  gulp.watch("source/img/**/*.{png,jpg,svg}").on("change", gulp.series("images", server.reload));
   // gulp.watch("source/*.html").on("change", server.reload);
 });
 
@@ -201,7 +202,8 @@ gulp.task("build",
       "outline",
       "css",
       "copy",
-      "scripts"
+      "scripts",
+      "images"
     ),
   )
 );

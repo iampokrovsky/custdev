@@ -16,6 +16,146 @@
   src: url("../fonts/montserrat-bold.woff2") format("woff2"), url("../fonts/montserrat-bold.woff") format("woff");
 }
 
+.about-teacher {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 50px 8px;
+}
+
+.about-teacher__heading {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 40px;
+
+  font-size: 24px;
+  line-height: 1.25em;
+  font-family: "montserrat-bold", "Arial", sans-serif;
+  text-align: center;
+  color: #000000;
+}
+
+.about-teacher__video {
+  position: relative;
+
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 304px;
+  height: 228px;
+  margin: 0 auto;
+  margin-bottom: 74px;
+  overflow: hidden;
+
+  border-radius: 10px;
+}
+
+.about-teacher__video::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 70px;
+  height: 70px;
+
+  background-image: url("../img/play-button.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0.5;
+
+  -webkit-transition: 0.2s ease-in-out;
+
+  transition: 0.2s ease-in-out;
+}
+
+.about-teacher__video:hover::before {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+  opacity: 1;
+}
+
+.about-teacher__video-image {
+  width: 304px;
+  height: 228px;
+}
+
+.about-teacher__badge {
+  display: none;
+}
+
+.about-teacher__features {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  padding-right: 42px;
+  padding-left: 62px;
+
+  list-style: none;
+}
+
+.about-teacher__feature {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 92px;
+
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.about-teacher__feature:not(:last-child) {
+  margin-bottom: 44px;
+}
+
+.about-teacher__feature--experience {
+  background-image: url("../img/icon-exp.svg");
+  background-size: 85px 70px;
+}
+
+.about-teacher__feature--students {
+  background-image: url("../img/icon-students.svg");
+  background-size: 83px 70px;
+}
+
+.about-teacher__feature--bot {
+  background-image: url("../img/icon-bot.svg");
+  background-size: 95px 70px;
+}
+
+.about-teacher__feature--top {
+  background-image: url("../img/icon-top.svg");
+  background-size: 94px 70px;
+}
+
+.about-teacher__feature-heading {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.44em;
+  font-family: "montserrat-regular", "Arial", sans-serif;
+  color: #2f80ed;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.about-teacher__feature-description {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+
+  font-size: 16px;
+  line-height: 1.44em;
+  font-family: "montserrat-regular", "Arial", sans-serif;
+  color: #636363;
+}
+
 .body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -567,10 +707,9 @@
           box-sizing: border-box;
   padding: 196px 8px;
 
-  background-image: url("../img/group-10.svg");
+  background-image: url("../img/bg-result-mobile.svg");
   background-repeat: no-repeat;
   background-position: -387px -64px;
-  border-bottom: 1px solid #000000;
 }
 
 .result__heading {
@@ -614,42 +753,42 @@
 }
 
 .result__point--start {
-  background-image: url("../img/icon-lightbulb@1x.png");
+  background-image: url("../img/bg-lightbulb@1x.png");
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .result__point--start {
-    background-image: url("../img/icon-lightbulb@2x.png");
+    background-image: url("../img/bg-lightbulb@2x.png");
   }
 }
 
 .result__point--practice {
-  background-image: url("../img/icon-process@1x.png");
+  background-image: url("../img/bg-process@1x.png");
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .result__point--practice {
-    background-image: url("../img/icon-process@2x.png");
+    background-image: url("../img/bg-process@2x.png");
   }
 }
 
 .result__point--tools {
-  background-image: url("../img/icon-sheets@1x.png");
+  background-image: url("../img/bg-sheets@1x.png");
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .result__point--tools {
-    background-image: url("../img/icon-sheets@2x.png");
+    background-image: url("../img/bg-sheets@2x.png");
   }
 }
 
 .result__point--cases {
-  background-image: url("../img/icon-chart@1x.png");
+  background-image: url("../img/bg-chart@1x.png");
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
   .result__point--cases {
-    background-image: url("../img/icon-chart@2x.png");
+    background-image: url("../img/bg-chart@2x.png");
   }
 }
 
