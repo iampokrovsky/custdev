@@ -1,0 +1,129 @@
+.cost-included {
+  box-sizing: border-box;
+  padding: 190px 20px 62px;
+  background-repeat: no-repeat;
+  background-position: -425px 0;
+  background-image: url("../img/cost-included/cost-included-bg.svg");
+}
+
+.cost-included__heading {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 66px;
+
+  text-align: center;
+
+  @include bold(24px, 1.25em, $white);
+}
+
+.cost-included__list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.cost-included__item {
+  box-sizing: border-box;
+  padding: 40px 40px 30px 52px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  background-color: $white;
+  border-radius: 10px;
+  box-shadow: 0px 20px 50px rgba(47, 55, 237, 0.12);
+  min-height: 350px;
+  background-repeat: no-repeat;
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &--manuals {
+    background-image: url("../img/cost-included/manual@1x.png");
+    background-size: 168px 118px;
+    background-position: 44px 44px;
+
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/cost-included/manual@2x.png");
+    }
+  }
+
+  &--subscription {
+    background-image: url("../img/cost-included/subscription@1x.png");
+    background-size: 80px 80px;
+    background-position: 50px 44px;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/cost-included/subscription@2x.png");
+    }
+  }
+
+  &--video {
+    padding-bottom: 60px;
+  }
+
+  &--chat {
+    background-image: url("../img/cost-included/smile@1x.png");
+    background-size: 72px 72px;
+    background-position: 50px 44px;
+    padding-bottom: 44px;
+    @media (min-resolution: 1.5dppx) {
+      background-image: url("../img/cost-included/smile@2x.png");
+    }
+  }
+}
+
+.cost-included__item-heading {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 14px;
+
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+
+  @include regular(14px, 1.44em, $blue);
+}
+
+.cost-included__item-description {
+  box-sizing: border-box;
+  margin: 0;
+
+  @include regular(14px, 1.44em, $lightgrey);
+}
+
+.cost-included__video {
+  position: relative;
+
+  display: block;
+  box-sizing: border-box;
+  width: 178px;
+  height: 166px;
+  margin-right: auto;
+  overflow: hidden;
+  margin-bottom: 32px;
+
+  border-radius: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+
+    background-image: url("../img/play-button.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    transform: translate(-50%, -50%);
+    opacity: 0.5;
+    background-size: 50px 50px;
+
+    transition: 0.2s ease-in-out;
+  }
+}
