@@ -212,6 +212,7 @@
 .gallery {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  padding-top: 56px 0 30px;
 }
 
 .gallery__heading {
@@ -219,6 +220,7 @@
           box-sizing: border-box;
   margin: 0;
   margin: 0 8px 0 8px;
+  margin-bottom: 28px;
 
   font-size: 24px;
   line-height: 1.25em;
@@ -262,8 +264,8 @@
           box-sizing: border-box;
   width: 158px;
   max-width: 100%;
-  height: auto;
   height: 135px;
+  height: auto;
 }
 
 .header__container {
