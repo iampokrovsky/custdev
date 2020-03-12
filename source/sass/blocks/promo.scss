@@ -6,7 +6,7 @@
 .promo__place-n-date {
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 26px;
+  margin-bottom: 24px;
 
   text-transform: uppercase;
   letter-spacing: 5%;
@@ -17,7 +17,7 @@
 .promo__slogan {
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 44px;
+  margin-bottom: 42px;
 
   @include bold(24px, 1.25em, $white);
 }
