@@ -32,6 +32,7 @@
     top: 50%;
     left: 50%;
 
+    box-sizing: border-box;
     width: 70px;
     height: 70px;
 
@@ -51,8 +52,11 @@
 }
 
 .about-teacher__video-image {
+  box-sizing: border-box;
   width: 304px;
   height: 228px;
+
+  @include responsive-image;
 }
 
 .about-teacher__badge {
