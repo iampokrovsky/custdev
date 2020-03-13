@@ -88,8 +88,12 @@ gulp.task("scripts", function () {
     "./source/libs/**/*.js",
   ])
     .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(concat("script.js"))
+    .pipe(gulp.dest("./build/js"))
     .pipe(uglify())
     .pipe(rename({ suffix: ".min" }))
+    .pipe(sourcemap.write("."))
     .pipe(gulp.dest("./build/js"))
 });
 

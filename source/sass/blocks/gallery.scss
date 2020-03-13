@@ -15,12 +15,12 @@
 
 .gallery__list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
   margin-right: -4px;
+  padding: 0;
 
   list-style: none;
 }
@@ -29,8 +29,8 @@
   box-sizing: border-box;
   width: 158px;
   height: 135px;
-  margin-bottom: 6px;
   margin-right: 4px;
+  margin-bottom: 6px;
 
   // &:nth-child(odd) {
   //   margin-right: 4px;

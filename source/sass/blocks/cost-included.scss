@@ -31,9 +31,9 @@
   // justify-content: flex-end;
   box-sizing: border-box;
   min-height: 350px;
-  padding-left: 52px;
   padding-right: 40px;
   padding-bottom: 30px;
+  padding-left: 52px;
 
   background-color: $white;
   background-repeat: no-repeat;
@@ -45,10 +45,11 @@
   }
 
   &--manuals {
+    padding-top: 206px;
+
     background-image: url("../img/cost-included/manual@1x.png");
     background-position: 44px 60px;
     background-size: 168px 118px;
-    padding-top: 206px;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/cost-included/manual@2x.png");
@@ -56,10 +57,11 @@
   }
 
   &--subscription {
+    padding-top: 206px;
+
     background-image: url("../img/cost-included/subscription@1x.png");
     background-position: 50px 42px;
     background-size: 80px 80px;
-    padding-top: 206px;
 
     @media (min-resolution: 1.5dppx) {
       background-image: url("../img/cost-included/subscription@2x.png");
@@ -72,8 +74,8 @@
   }
 
   &--chat {
-    padding-bottom: 44px;
     padding-top: 130px;
+    padding-bottom: 44px;
 
     background-image: url("../img/cost-included/smile@1x.png");
     background-position: 50px 42px;

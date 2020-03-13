@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", function () {
 //   }
 // };
 
-menuButton.onclick = function (evt) {
-  evt.preventDefault();
+menuButton.onclick = function (event) {
+  event.preventDefault();
 
   // if (!menuButton.classList.contains("main-nav__button--close") && !navContent.classList.contains("main-nav__content--open")) {
   //   navButton.classList.add("main-nav__button--close");
@@ -57,4 +57,4 @@ menuButton.onclick = function (evt) {
       navList.classList.remove("nav__list--close");
     }, 300);
   }
-};
+}
