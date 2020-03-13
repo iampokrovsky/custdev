@@ -211,7 +211,7 @@
 .cost-included {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 190px 20px 62px;
+  padding: 190px 20px 24px;
 
   background-image: url("../img/cost-included/cost-included-bg.svg");
   background-repeat: no-repeat;
@@ -445,6 +445,140 @@
   background-image: url("../img/bg-header-photo-mobile.png"), url("../img/bg-header-mobile.svg");
   background-repeat: no-repeat;
   background-position: -480px -480px, -480px -480px;
+}
+
+.info__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 46px 8px 46px;
+
+  background-color: #2f80ed;
+}
+
+.info__cities {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 32px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.info__city {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+  font-size: 14px;
+  line-height: 1.2em;
+  font-family: "montserrat-regular", "Arial", sans-serif;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.info__city--current {
+  font-size: 14px;
+  line-height: 1.2em;
+  font-family: "montserrat-bold", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.info__city:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.info__join-button {
+  width: 160px;
+  padding: 13px 25px;
+
+  font-size: 14px;
+  line-height: 1.2em;
+  font-family: "montserrat-regular", "Arial", sans-serif;
+  color: #2f80ed;
+  text-transform: none;
+
+  background-color: #ffffff;
+}
+
+.info__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 42px 8px 46px;
+
+  background-color: #185fbf;
+}
+
+.info__copyright {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.2em;
+  font-family: "montserrat-regular", "Arial", sans-serif;
+  color: #ffffff;
+}
+
+.info__docs {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+
+  list-style: none;
+}
+
+.info__doc {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.info__doc:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.info__doc-link {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+
+  font-size: 14px;
+  line-height: 1.2em;
+  font-family: "montserrat-regular", "Arial", sans-serif;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .nav {
@@ -1302,6 +1436,43 @@
 
 .reviews__articles-list {
   display: none;
+}
+
+.sign-up {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 204px 20px 94px;
+
+  background-image: url("../img/sign-up/bg-sign-up-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: -229px 0;
+}
+
+.sign-up__input {
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding: 20px 40px;
+
+  font-size: 14px;
+  line-height: 1.25em;
+  font-family: "montserrat-regular", "Arial", sans-serif;
+  color: #636363;
+
+  border: 1px solid rgba(47, 128, 237, 0.3);
+}
+
+.sign-up__input:last-of-type {
+  margin-bottom: 40px;
+}
+
+.sign-up__form-button {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
 }
 
 .statistics {
