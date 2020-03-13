@@ -1,30 +1,34 @@
 .info__top {
-  box-sizing: border-box;
-  background-color: $blue;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
   padding: 46px 8px 46px;
+
+  background-color: $blue;
 }
 
 .info__cities {
-  box-sizing: border-box;
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  box-sizing: border-box;
+  margin: 0;
   margin-bottom: 32px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .info__city {
   box-sizing: border-box;
-  @include regular(14px, 1.2em, $white);
+
   text-transform: uppercase;
 
+  @include regular(14px, 1.2em, $white);
+
   &--current {
-    @include bold(14px, 1.2em, $white)
+    @include bold(14px, 1.2em, $white);
   }
 
   &:not(:last-child) {
@@ -33,34 +37,40 @@
 }
 
 .info__join-button {
-  background-color: $white;
-  @include regular(14px, 1.2em, $blue);
   width: 160px;
-  text-transform: none;
   padding: 13px 25px;
+
+  text-transform: none;
+
+  background-color: $white;
+
+  @include regular(14px, 1.2em, $blue);
 }
 
 .info__bottom {
-  box-sizing: border-box;
-  padding: 42px 8px 46px;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  box-sizing: border-box;
+  padding: 42px 8px 46px;
+
   background-color: #185fbf;
 }
 
 .info__copyright {
   box-sizing: border-box;
   margin: 0;
+
   @include regular(14px, 1.2em, $white);
 }
 
 .info__docs {
   box-sizing: border-box;
-  list-style: none;
   margin: 0;
-  padding: 0;
   margin-bottom: 40px;
+  padding: 0;
+
+  list-style: none;
 }
 
 .info__doc {
@@ -72,9 +82,11 @@
 }
 
 .info__doc-link {
-  box-sizing: border-box;
-  @include regular(14px, 1.2em, $white);
-  text-decoration: none;
   display: block;
+  box-sizing: border-box;
+
   text-align: center;
+  text-decoration: none;
+
+  @include regular(14px, 1.2em, $white);
 }

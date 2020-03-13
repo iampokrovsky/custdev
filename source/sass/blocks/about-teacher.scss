@@ -36,7 +36,7 @@
     width: 70px;
     height: 70px;
 
-    background-image: url("../img/play-button.svg");
+    background-image: url("../img/about-teacher/play-button.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
     transform: translate(-50%, -50%);
@@ -85,22 +85,22 @@
   }
 
   &--experience {
-    background-image: url("../img/icon-exp.svg");
+    background-image: url("../img/about-teacher/icon-exp.svg");
     background-size: 85px 70px;
   }
 
   &--students {
-    background-image: url("../img/icon-students.svg");
+    background-image: url("../img/about-teacher/icon-students.svg");
     background-size: 83px 70px;
   }
 
   &--bot {
-    background-image: url("../img/icon-bot.svg");
+    background-image: url("../img/about-teacher/icon-bot.svg");
     background-size: 95px 70px;
   }
 
   &--top {
-    background-image: url("../img/icon-top.svg");
+    background-image: url("../img/about-teacher/icon-top.svg");
     background-size: 94px 70px;
   }
 }

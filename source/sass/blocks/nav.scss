@@ -161,13 +161,13 @@
     height: 30px;
 
     background: none;
-    background-image: url("../img/icon-menu.svg");
+    background-image: url("../img/nav/icon-menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
 
     &--close {
-      background-image: url("../img/icon-menu-close.svg");
+      background-image: url("../img/nav/icon-menu-close.svg");
     }
 
     &--no-js {

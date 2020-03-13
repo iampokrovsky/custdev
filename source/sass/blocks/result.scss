@@ -2,7 +2,7 @@
   box-sizing: border-box;
   padding: 196px 8px;
 
-  background-image: url("../img/bg-result-mobile.svg");
+  background-image: url("../img/result/bg-result-mobile.svg");
   background-repeat: no-repeat;
   background-position: -387px -64px;
 }
@@ -41,34 +41,34 @@
   }
 
   &--start {
-    background-image: url("../img/bg-lightbulb@1x.png");
+    background-image: url("../img/result/bg-lightbulb@1x.png");
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-lightbulb@2x.png");
+      background-image: url("../img/result/bg-lightbulb@2x.png");
     }
   }
 
   &--practice {
-    background-image: url("../img/bg-process@1x.png");
+    background-image: url("../img/result/bg-process@1x.png");
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-process@2x.png");
+      background-image: url("../img/result/bg-process@2x.png");
     }
   }
 
   &--tools {
-    background-image: url("../img/bg-sheets@1x.png");
+    background-image: url("../img/result/bg-sheets@1x.png");
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-sheets@2x.png");
+      background-image: url("../img/result/bg-sheets@2x.png");
     }
   }
 
   &--cases {
-    background-image: url("../img/bg-chart@1x.png");
+    background-image: url("../img/result/bg-chart@1x.png");
 
     @media (min-resolution: 1.5dppx) {
-      background-image: url("../img/bg-chart@2x.png");
+      background-image: url("../img/result/bg-chart@2x.png");
     }
   }
 }
