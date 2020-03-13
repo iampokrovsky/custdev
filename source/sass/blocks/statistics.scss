@@ -1,6 +1,8 @@
 .statistics {
   box-sizing: border-box;
-  padding: 26px 8px 66px;
+  padding: 26px 0 66px;
+  padding-left: 8 / 320 * 100%;
+  padding-right: 8 / 320 * 100%;
 }
 
 .statistics__heading {

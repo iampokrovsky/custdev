@@ -202,9 +202,9 @@
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 320px;
+  width: 100%;
   min-width: 320px;
-  max-width: 1150px;
+  max-width: 767px;
   margin: 0 auto;
 }
 
@@ -241,20 +241,12 @@
 }
 
 .cost-included__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 350px;
-  padding: 40px 40px 30px 52px;
+  padding-right: 40px;
+  padding-bottom: 30px;
+  padding-left: 52px;
 
   background-color: #ffffff;
   background-repeat: no-repeat;
@@ -268,8 +260,10 @@
 }
 
 .cost-included__item--manuals {
+  padding-top: 206px;
+
   background-image: url("../img/cost-included/manual@1x.png");
-  background-position: 44px 44px;
+  background-position: 44px 60px;
   background-size: 168px 118px;
 }
 
@@ -280,8 +274,10 @@
 }
 
 .cost-included__item--subscription {
+  padding-top: 206px;
+
   background-image: url("../img/cost-included/subscription@1x.png");
-  background-position: 50px 44px;
+  background-position: 50px 42px;
   background-size: 80px 80px;
 }
 
@@ -292,14 +288,16 @@
 }
 
 .cost-included__item--video {
+  padding-top: 54px;
   padding-bottom: 60px;
 }
 
 .cost-included__item--chat {
+  padding-top: 130px;
   padding-bottom: 44px;
 
   background-image: url("../img/cost-included/smile@1x.png");
-  background-position: 50px 44px;
+  background-position: 50px 42px;
   background-size: 72px 72px;
 }
 
@@ -344,7 +342,7 @@
   width: 178px;
   height: 166px;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 34px;
   overflow: hidden;
 
   border-radius: 5px;
@@ -378,14 +376,13 @@
 .gallery {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 56px 0 30px;
+  padding: 56px 0 24px;
 }
 
 .gallery__heading {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
-  margin: 0 8px 0 8px;
+  margin: 0 8px;
   margin-bottom: 28px;
 
   font-size: 24px;
@@ -401,9 +398,13 @@
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  margin-right: -4px;
   padding: 0;
 
   list-style: none;
@@ -414,15 +415,8 @@
           box-sizing: border-box;
   width: 158px;
   height: 135px;
-  margin-bottom: 6px;
-}
-
-.gallery__item:nth-child(odd) {
   margin-right: 4px;
-}
-
-.gallery__item:nth-child(n+6) {
-  margin-bottom: 0;
+  margin-bottom: 6px;
 }
 
 .gallery__image {
@@ -440,7 +434,9 @@
   -webkit-box-sizing: border-box;
 
           box-sizing: border-box;
-  padding: 30px 8px;
+  padding: 30px 0;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
 
   background-image: url("../img/header/bg-header-photo-mobile.png"), url("../img/header/bg-header-mobile.svg");
   background-repeat: no-repeat;
@@ -789,7 +785,7 @@
   .nav__menu-button {
     position: absolute;
     top: 22px;
-    right: 8px;
+    right: 2.5%;
 
     -webkit-box-sizing: border-box;
 
@@ -938,10 +934,9 @@
   -webkit-box-ordinal-group: 4;
       -ms-flex-order: 3;
           order: 3;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 196px;
 }
 
 .program {
@@ -1472,13 +1467,16 @@
 .sign-up__form-button {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 100%;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .statistics {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 26px 8px 66px;
+  padding: 26px 0 66px;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
 }
 
 .statistics__heading {

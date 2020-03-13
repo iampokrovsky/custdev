@@ -154,7 +154,7 @@
   .nav__menu-button {
     position: absolute;
     top: 22px;
-    right: 8px;
+    right: 8 / 320 * 100%;
 
     box-sizing: border-box;
     width: 30px;
