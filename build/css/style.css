@@ -449,7 +449,6 @@
     padding: 42px 16px;
 
     background-image: url("../img/header/bg-header-photo.png"), url("../img/header/bg-header.svg");
-    background-repeat: no-repeat;
     background-position: -120px -480px, -120px -480px;
   }
 }
@@ -642,7 +641,7 @@
   border: none;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1439px) {
   @-webkit-keyframes bubble {
     from {
       -webkit-transform: scale(1);
@@ -825,7 +824,7 @@
   }
 }
 
-@media (max-width: 1440px) and (min-width: 768px) {
+@media (max-width: 1439px) and (min-width: 768px) {
   .nav__list {
     top: 20px;
     right: 4px;
@@ -848,7 +847,9 @@
   .nav--no-js {
     margin-bottom: 54px;
   }
+}
 
+@media (min-width: 768px) and (max-width: 1439px) {
   .nav__cities {
     position: relative;
 
@@ -920,10 +921,6 @@
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;
-  }
-
-  .nav__join-button {
-    line-height: 1.2em;
   }
 }
 
@@ -1639,7 +1636,7 @@
 .statistics {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 26px 0 66px;
+  padding: 26px 0 56px;
   padding-right: 2.5%;
   padding-left: 2.5%;
 }
@@ -1670,6 +1667,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   min-height: 235px;
+  margin-bottom: 10px;
   padding: 40px 22px 20px 50px;
 
   font-size: 14px;
@@ -1683,10 +1681,6 @@
           box-shadow: 0 30px 100px rgba(47, 55, 237, 0.1);
 }
 
-.statistics__point:not(:last-child) {
-  margin-bottom: 10px;
-}
-
 .statistics__rate {
   display: block;
   -webkit-box-sizing: border-box;
@@ -1697,6 +1691,42 @@
   line-height: 1.44em;
   font-family: "montserrat-bold", "Arial", sans-serif;
   color: #2f80ed;
+}
+
+@media (min-width: 768px) {
+  .statistics {
+    padding: 0 94px;
+    padding-top: 14px;
+    padding-bottom: 36px;
+  }
+
+  .statistics__heading {
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 62px;
+
+    font-size: 30px;
+  }
+
+  .statistics__points {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+  }
+
+  .statistics__point {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    width: 48.27586%;
+    margin-bottom: 20px;
+    padding: 40px 22px 20px 50px;
+  }
 }
 
 .visually-hidden {

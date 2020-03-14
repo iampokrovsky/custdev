@@ -43,7 +43,7 @@
   @include regular(14px, 1.44em, $white);
 }
 
-@media (max-width: $desktop-width) {
+@media (max-width: $only-portable) {
   @keyframes bubble {
     from {
       transform: scale(1);
@@ -65,13 +65,13 @@
   }
 
   .nav__list {
-    width: 184px;
     position: absolute;
     top: 10px;
     right: 2px;
     z-index: 0;
 
     display: none;
+    width: 184px;
     padding: 20px 35px 20px 10px;
     overflow: hidden;
 
@@ -203,69 +203,67 @@
     }
   }
 
-  .nav__cities {
-    position: relative;
+  @media (max-width: $only-portable) {
+    .nav__cities {
+      position: relative;
 
-    display: block;
-    box-sizing: border-box;
-    min-width: 166px;
-    margin: 0;
-    padding: 0;
-    padding-top: 36px;
-    margin-right: 112px;
+      display: block;
+      box-sizing: border-box;
+      min-width: 166px;
+      margin: 0;
+      margin-right: 112px;
+      padding: 0;
+      padding-top: 36px;
 
-    list-style: none;
-    color: rgba(0, 0, 0, 0);
+      list-style: none;
+      color: rgba(0, 0, 0, 0);
 
-    visibility: hidden;
+      visibility: hidden;
 
-    transition: 0.2s ease-in-out;
+      transition: 0.2s ease-in-out;
 
-    &--visible {
-      color: $blue;
+      &--visible {
+        color: $blue;
 
-      visibility: visible;
+        visibility: visible;
+      }
+
+      &--no-js {
+        color: $blue;
+
+        visibility: visible;
+      }
     }
 
-    &--no-js {
-      color: $blue;
+    .nav__city {
+      box-sizing: border-box;
+      margin-bottom: 20px;
 
-      visibility: visible;
+      @include regular(14px, 1.2em, inherit);
+
+      &--current {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        background-image: url("../img/nav/nav-vector.svg");
+        background-repeat: no-repeat;
+        background-position: right center;
+        visibility: visible;
+
+        @include bold(14px, 1.2em, $blue);
+      }
     }
-  }
 
-  .nav__city {
-    box-sizing: border-box;
-    margin-bottom: 20px;
+    .nav__city-link {
+      display: block;
+      box-sizing: border-box;
+      padding-right: 22px;
 
-    @include regular(14px, 1.2em, inherit);
-
-    &--current {
-      position: absolute;
-      top: 0;
-      left: 0;
-
-      background-image: url("../img/nav/nav-vector.svg");
-      background-repeat: no-repeat;
-      background-position: right center;
-      visibility: visible;
-
-      @include bold(14px, 1.2em, $blue);
+      font: inherit;
+      color: inherit;
+      text-transform: uppercase;
+      text-decoration: none;
     }
-  }
-
-  .nav__city-link {
-    display: block;
-    box-sizing: border-box;
-    padding-right: 22px;
-
-    font: inherit;
-    color: inherit;
-    text-transform: uppercase;
-    text-decoration: none;
-  }
-
-  .nav__join-button {
-    line-height: 1.2em;
   }
 }

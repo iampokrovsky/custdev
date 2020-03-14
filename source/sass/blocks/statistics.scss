@@ -1,6 +1,6 @@
 .statistics {
   box-sizing: border-box;
-  padding: 26px 0 66px;
+  padding: 26px 0 56px;
   padding-right: 8 / 320 * 100%;
   padding-left: 8 / 320 * 100%;
 }
@@ -31,12 +31,9 @@
   background-color: $white;
   border-radius: 10px;
   box-shadow: 0 30px 100px rgba(47, 55, 237, 0.1);
+  margin-bottom: 10px;
 
   @include regular(14px, 1.44em, $lightgrey);
-
-  &:not(:last-child) {
-    margin-bottom: 10px;
-  }
 }
 
 .statistics__rate {
@@ -45,4 +42,33 @@
   margin-bottom: 14px;
 
   @include bold(24px, 1.44em, $blue);
+}
+
+@media (min-width: $tablet-width) {
+  .statistics {
+    padding: 0 94px;
+    padding-top: 14px;
+    padding-bottom: 36px;
+  }
+
+  .statistics__heading {
+    font-size: 30px;
+    width: 460px;
+    margin: 0 auto;
+    margin-bottom: 62px;
+  }
+
+  .statistics__points {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .statistics__point {
+    padding: 40px 22px 20px 50px;
+    width: 280 / 580 * 100%;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+  }
 }

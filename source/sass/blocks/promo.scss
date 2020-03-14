@@ -129,10 +129,10 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    box-sizing: border-box;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    box-sizing: border-box;
     padding-left: 28px;
   }
 
@@ -148,14 +148,16 @@
 
   .promo__slogan {
     margin-bottom: 30px;
+
     font-size: 36px;
   }
 
   .promo__note {
     margin-bottom: 34px;
-    line-height: 1.44em;
-    font-size: 18px;
+
     font-weight: 500;
+    font-size: 18px;
+    line-height: 1.44em;
   }
 
   .promo__reviews-list {

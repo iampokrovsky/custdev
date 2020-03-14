@@ -14,15 +14,10 @@
 
 @media (min-width: $tablet-width) {
   .header__container {
-    // position: relative;
-    // box-sizing: border-box;
     padding: 42px 16px;
-    // padding-right: 16px;
-    // padding-left: 16px;
 
     background-image: url("../img/header/bg-header-photo.png"),
       url("../img/header/bg-header.svg");
-    background-repeat: no-repeat;
     background-position: -120px -480px, -120px -480px;
   }
 }
