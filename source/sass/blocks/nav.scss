@@ -65,6 +65,7 @@
   }
 
   .nav__list {
+    width: 184px;
     position: absolute;
     top: 10px;
     right: 2px;
@@ -143,6 +144,10 @@
 
   .nav__link {
     @include regular(14px, 1.44em, inherit);
+
+    &:hover {
+      font-family: "montserrat-bold";
+    }
   }
 
   .nav__item {
@@ -174,16 +179,27 @@
       background: none;
     }
   }
+
+  @media (min-width: $tablet-width) {
+    .nav__list {
+      top: 20px;
+      right: 4px;
+    }
+
+    .nav__menu-button {
+      top: 33px;
+      right: 16px;
+    }
+  }
 }
 
 @media (min-width: $tablet-width) {
   .nav {
-    display: flex;
-    box-sizing: border-box;
-    margin-bottom: 72px;
+    align-items: flex-start;
+    margin-bottom: 14px;
 
     &--no-js {
-      margin-bottom: 160px;
+      margin-bottom: 54px;
     }
   }
 
@@ -192,11 +208,11 @@
 
     display: block;
     box-sizing: border-box;
-    // opacity: 0;
     min-width: 166px;
     margin: 0;
     padding: 0;
     padding-top: 36px;
+    margin-right: 112px;
 
     list-style: none;
     color: rgba(0, 0, 0, 0);
@@ -206,6 +222,12 @@
     transition: 0.2s ease-in-out;
 
     &--visible {
+      color: $blue;
+
+      visibility: visible;
+    }
+
+    &--no-js {
       color: $blue;
 
       visibility: visible;
@@ -243,167 +265,7 @@
     text-decoration: none;
   }
 
-  .nav__list {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-  }
-
-  .nav__item {
-    box-sizing: border-box;
-  }
-
-  .nav__link {
-    box-sizing: border-box;
-
-    text-decoration: none;
-  }
-
   .nav__join-button {
-    display: block;
-    box-sizing: border-box;
-    padding: 0;
-
-    text-transform: none;
-
-    background: none;
-    border: none;
-
-    @include regular(14px, 1.44em, $white);
-  }
-
-  @media (max-width: $desktop-width) {
-    @keyframes bubble {
-      from {
-        transform: scale(1);
-      }
-
-      to {
-        transform: scale(12);
-      }
-    }
-
-    @keyframes opacify {
-      from {
-        color: rgba($blue, 0);
-      }
-
-      to {
-        color: rgba($blue, 1);
-      }
-    }
-
-    .nav__list {
-      position: absolute;
-      top: 10px;
-      right: 2px;
-      z-index: 0;
-
-      display: none;
-      padding: 20px 35px 20px 10px;
-      overflow: hidden;
-
-      color: $blue;
-
-      border-radius: 10px;
-
-      &--open {
-        animation: opacify;
-        animation-duration: 0.15s;
-        animation-delay: 0.15s;
-
-        animation-fill-mode: both;
-      }
-
-      &--close {
-        animation: opacify;
-        animation-duration: 0.15s;
-        animation-direction: reverse;
-
-        animation-fill-mode: both;
-      }
-
-      &--visible {
-        display: block;
-      }
-
-      &--no-js {
-        display: block;
-
-        color: $white;
-      }
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 6px;
-        right: 0;
-        z-index: -1;
-
-        display: none;
-        box-sizing: border-box;
-        width: 42px;
-        height: 42px;
-
-        background-color: $white;
-        border-radius: 50%;
-        transform: scale(12);
-      }
-
-      &--visible::before {
-        display: block;
-      }
-
-      &--open::before {
-        animation-name: bubble;
-        animation-duration: 0.3s;
-
-        animation-fill-mode: both;
-      }
-
-      &--close::before {
-        animation-name: bubble;
-        animation-duration: 0.3s;
-        animation-direction: reverse;
-
-        animation-fill-mode: both;
-      }
-    }
-
-    .nav__link {
-      @include regular(14px, 1.44em, inherit);
-    }
-
-    .nav__item {
-      &:not(:last-child) {
-        margin-bottom: 20px;
-      }
-    }
-
-    .nav__menu-button {
-      position: absolute;
-      top: 22px;
-      right: 8 / 320 * 100%;
-
-      box-sizing: border-box;
-      width: 30px;
-      height: 30px;
-
-      background: none;
-      background-image: url("../img/nav/icon-menu.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-      border: none;
-
-      &--close {
-        background-image: url("../img/nav/icon-menu-close.svg");
-      }
-
-      &--no-js {
-        background: none;
-      }
-    }
+    line-height: 1.2em;
   }
 }

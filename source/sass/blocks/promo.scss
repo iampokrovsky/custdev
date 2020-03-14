@@ -9,7 +9,7 @@
   margin-bottom: 24px;
 
   text-transform: uppercase;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 
   @include regular(12px, 1.25em, $white);
 }
@@ -125,4 +125,41 @@
   background-position: center right;
 
   @include regular(10px, 1.5em, $blue);
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    padding-left: 28px;
+  }
+
+  .promo__invite {
+    margin-bottom: 0;
+  }
+
+  .promo__place-n-date {
+    margin-bottom: 18px;
+
+    font-size: 14px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 30px;
+    font-size: 36px;
+  }
+
+  .promo__note {
+    margin-bottom: 34px;
+    line-height: 1.44em;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .promo__reviews-list {
+    margin-top: 308px;
+    margin-right: 20px;
+  }
 }

@@ -1,6 +1,13 @@
-var currentCity = document.querySelector(".nav__city--current");
 var citiesList = document.querySelector(".nav__cities");
 var cities = document.querySelectorAll(".nav__city");
+var currentCity = document.querySelector(".nav__city--current");
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (citiesList.classList.contains("nav__cities--no-js")) {
+    citiesList.classList.remove("nav__cities--no-js");
+  }
+});
+
 
 currentCity.onmouseover = function (event) {
   if (!citiesList.classList.contains("nav__cities--visible")) {
