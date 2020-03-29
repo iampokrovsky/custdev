@@ -14,17 +14,13 @@
   @include bold(24px, 1.25em, $black);
 }
 
-.program__content-wrapper {
-  box-sizing: border-box;
-  padding-right: 44px;
-  padding-left: 62px;
-}
-
 .program__list {
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 32px;
   padding: 0;
+  padding-right: 44px;
+  padding-left: 62px;
 
   list-style: none;
 }
@@ -56,6 +52,12 @@
   @include regular(14px, 1.44em, $lightgrey);
 }
 
+.program__link-wrapper {
+  box-sizing: border-box;
+  padding-right: 44px;
+  padding-left: 62px;
+}
+
 .program__link {
   box-sizing: border-box;
 
@@ -71,4 +73,96 @@
 
 .program__benefits {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .program {
+    position: relative;
+    padding: 34px 94px 118px 94px;
+  }
+
+  .program__heading {
+    margin-bottom: 68px;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .program__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+    padding: 0;
+  }
+
+  .program__item {
+    &:nth-child(odd) {
+      width: 200px;
+      margin-right: 100px;
+    }
+
+    &:nth-child(even) {
+      width: 240px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 64px;
+    }
+  }
+
+  .program__link-wrapper {
+    width: 200px;
+    padding: 0;
+  }
+
+  .program__benefits {
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 70px;
+    right: 94px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    &::before {
+      box-sizing: border-box;
+      content: "";
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      top: -43px;
+      right: -55px;
+      border-radius: 50%;
+      background-image: url("../img/program/program-ellipse-tablet.svg");
+      background-repeat: no-repeat;
+      background-position: center -30px;
+    }
+  }
+
+  .program__benefit {
+    box-sizing: border-box;
+    width: 280px;
+    height: 212px;
+    border-radius: 10px;
+    background-color: $white;
+    padding: 58px 40px;
+    padding-right: 30px;
+    overflow: hidden;
+ 
+    @include regular(14px, 1.44em, $lightgrey);
+    font-weight: 600;
+    box-shadow: 0px 30px 100px rgba(47, 55, 237, 0.1);
+  }
+
+  .program__benefit-point {
+    box-sizing: border-box;
+    display: block;
+    margin: 0;
+    margin-bottom: 10px;
+
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+
+    @include regular(14px, 1.44em, $blue);
+  }
 }

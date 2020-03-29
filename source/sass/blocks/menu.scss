@@ -19,6 +19,7 @@
 @media (max-width: $only-portable) {
   .menu {
     box-sizing: border-box;
+
     &--no-js {
       order: 1;
       margin-left: auto;
@@ -29,11 +30,11 @@
     position: absolute;
     top: 22px;
     right: 8 / 320 * 100%;
+    z-index: 1;
 
     box-sizing: border-box;
     width: 30px;
     height: 30px;
-    z-index: 1;
 
     background: none;
     background-image: url("../img/menu/icon-menu.svg");
@@ -106,13 +107,14 @@
     }
 
     &--no-js {
-      display: block;
-      color: $white;
-
       position: static;
+
+      display: block;
       width: auto;
       height: auto;
       padding: 0;
+
+      color: $white;
     }
 
     &::before {

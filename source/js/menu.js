@@ -21,28 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-
-// menuButton.onclick = function (evt) {
-//   evt.preventDefault();
-
-//   if (!navButton.classList.contains("main-nav__button--close") && !navContent.classList.contains("main-nav__content--open")) {
-//     navButton.classList.add("main-nav__button--close");
-//     navContent.classList.add("main-nav__content--open");
-//   } else {
-//     navButton.classList.remove("main-nav__button--close");
-//     navContent.classList.remove("main-nav__content--open");
-//   }
-// };
-
 menuButton.onclick = function (event) {
   event.preventDefault();
-
-  // if (!menuButton.classList.contains("main-nav__button--close") && !navContent.classList.contains("main-nav__content--open")) {
-  //   navButton.classList.add("main-nav__button--close");
-  // } else {
-  //   navButton.classList.remove("main-nav__button--close");
-  // }
-
 
   if (!menuButton.classList.contains("menu__button--close") && !menuList.classList.contains("menu__list--visible") && !menuList.classList.contains("menu__list--open")) {
     menuButton.classList.add("menu__button--close");
