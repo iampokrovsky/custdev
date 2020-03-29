@@ -1,19 +1,23 @@
 var nav = document.querySelector(".nav");
-var navList = document.querySelector(".nav__list");
-var menuButton = document.querySelector(".nav__menu-button");
+var menu = document.querySelector(".menu");
+var menuButton = document.querySelector(".menu__button");
+var menuList = document.querySelector(".menu__list");
 
 document.addEventListener("DOMContentLoaded", function () {
   if (nav.classList.contains("nav--no-js")) {
     nav.classList.remove("nav--no-js");
   }
 
-  if (navList.classList.contains("nav__list--no-js")) {
-    navList.classList.remove("nav__list--no-js");
+  if (menu.classList.contains("menu--no-js")) {
+    menu.classList.remove("menu--no-js");
   }
 
-  
-  if (menuButton.classList.contains("nav__menu-button--no-js")) {
-    menuButton.classList.remove("nav__menu-button--no-js");
+  if (menuButton.classList.contains("menu__button--no-js")) {
+    menuButton.classList.remove("menu__button--no-js");
+  }
+
+  if (menuList.classList.contains("menu__list--no-js")) {
+    menuList.classList.remove("menu__list--no-js");
   }
 });
 
@@ -40,21 +44,21 @@ menuButton.onclick = function (event) {
   // }
 
 
-  if (!menuButton.classList.contains("nav__menu-button--close") && !navList.classList.contains("nav__list--visible") && !navList.classList.contains("nav__list--open")) {
-    menuButton.classList.add("nav__menu-button--close");
-    navList.classList.add("nav__list--visible");
-    navList.classList.add("nav__list--open");
+  if (!menuButton.classList.contains("menu__button--close") && !menuList.classList.contains("menu__list--visible") && !menuList.classList.contains("menu__list--open")) {
+    menuButton.classList.add("menu__button--close");
+    menuList.classList.add("menu__list--visible");
+    menuList.classList.add("menu__list--open");
     setTimeout(function () {
-      navList.classList.remove("nav__list--open");
+      menuList.classList.remove("menu__list--open");
     }, 300);
   }
 
-  if (menuButton.classList.contains("nav__menu-button--close") && navList.classList.contains("nav__list--visible") && !navList.classList.contains("nav__list--open")) {
-    navList.classList.add("nav__list--close");
+  if (menuButton.classList.contains("menu__button--close") && menuList.classList.contains("menu__list--visible") && !menuList.classList.contains("menu__list--open")) {
+    menuList.classList.add("menu__list--close");
     setTimeout(function () {
-      menuButton.classList.remove("nav__menu-button--close");
-      navList.classList.remove("nav__list--visible");
-      navList.classList.remove("nav__list--close");
+      menuButton.classList.remove("menu__button--close");
+      menuList.classList.remove("menu__list--visible");
+      menuList.classList.remove("menu__list--close");
     }, 300);
   }
 }
