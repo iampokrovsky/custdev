@@ -1171,7 +1171,7 @@
   .program {
     position: relative;
 
-    padding: 34px 94px 118px 94px;
+    padding: 34px 94px 68px 94px;
   }
 
   .program__heading {
@@ -1212,7 +1212,7 @@
   .program__benefits {
     position: absolute;
     right: 94px;
-    bottom: 70px;
+    bottom: 20px;
 
     display: block;
     -webkit-box-sizing: border-box;
@@ -1237,7 +1237,7 @@
 
     background-image: url("../img/program/program-ellipse-tablet.svg");
     background-repeat: no-repeat;
-    background-position: center -30px;
+    background-position: center -33px;
     border-radius: 50%;
   }
 
@@ -1491,7 +1491,9 @@
 .result {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 196px 8px;
+  padding: 196px 0;
+  padding-right: 2.5%;
+  padding-left: 2.5%;
 
   background-image: url("../img/result/bg-result-mobile.svg");
   background-repeat: no-repeat;
@@ -1601,6 +1603,39 @@
   line-height: 1.82em;
   font-family: "montserrat-regular", "Arial", sans-serif;
   color: #636363;
+}
+
+@media (min-width: 768px) {
+  .result {
+    padding: 212px 106px 238px 96px;
+
+    background-image: url("../img/result/bg-result-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: -387px -50px;
+  }
+
+  .result__heading {
+    margin-bottom: 70px;
+
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .result__point {
+    min-height: 278px;
+    padding: 56px 62px;
+    padding-left: 152px;
+
+    background-position: 56px 56px;
+  }
+
+  .result__point:not(:last-child) {
+    margin-bottom: 26px;
+  }
+
+  .result__point-description {
+    line-height: 1.44em;
+  }
 }
 
 .reviews {

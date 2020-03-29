@@ -1,6 +1,8 @@
 .result {
   box-sizing: border-box;
-  padding: 196px 8px;
+  padding: 196px 0;
+  padding-right: 8 / 320 * 100%;
+  padding-left: 8 / 320 * 100%;
 
   background-image: url("../img/result/bg-result-mobile.svg");
   background-repeat: no-repeat;
@@ -89,4 +91,38 @@
   margin: 0;
 
   @include regular(14px, 1.82em, $lightgrey);
+}
+
+@media (min-width: $tablet-width) {
+  .result {
+    padding: 212px 106px 238px 96px;
+
+    background-image: url("../img/result/bg-result-tablet.svg");
+    background-repeat: no-repeat;
+    background-position: -387px -50px;
+  }
+
+  .result__heading {
+    margin-bottom: 70px;
+
+    text-align: left;
+
+    font-size: 30px;
+  }
+
+  .result__point {
+    padding: 56px 62px;
+
+    padding-left: 152px;
+    min-height: 278px;
+    background-position: 56px 56px;
+
+    &:not(:last-child) {
+      margin-bottom: 26px;
+    }
+  }
+
+  .result__point-description {
+    line-height: 1.44em;
+  }
 }

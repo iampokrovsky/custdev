@@ -78,11 +78,13 @@
 @media (min-width: $tablet-width) {
   .program {
     position: relative;
-    padding: 34px 94px 118px 94px;
+
+    padding: 34px 94px 68px 94px;
   }
 
   .program__heading {
     margin-bottom: 68px;
+
     font-size: 30px;
     text-align: left;
   }
@@ -115,26 +117,31 @@
   }
 
   .program__benefits {
-    box-sizing: border-box;
     position: absolute;
-    bottom: 70px;
     right: 94px;
+    bottom: 20px;
+
     display: block;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+
     list-style: none;
+
     &::before {
-      box-sizing: border-box;
       content: "";
       position: absolute;
-      width: 110px;
-      height: 110px;
       top: -43px;
       right: -55px;
-      border-radius: 50%;
+
+      box-sizing: border-box;
+      width: 110px;
+      height: 110px;
+
       background-image: url("../img/program/program-ellipse-tablet.svg");
       background-repeat: no-repeat;
-      background-position: center -30px;
+      background-position: center -33px;
+      border-radius: 50%;
     }
   }
 
@@ -142,20 +149,22 @@
     box-sizing: border-box;
     width: 280px;
     height: 212px;
-    border-radius: 10px;
-    background-color: $white;
     padding: 58px 40px;
     padding-right: 30px;
     overflow: hidden;
- 
-    @include regular(14px, 1.44em, $lightgrey);
+
     font-weight: 600;
-    box-shadow: 0px 30px 100px rgba(47, 55, 237, 0.1);
+
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 30px 100px rgba(47, 55, 237, 0.1);
+
+    @include regular(14px, 1.44em, $lightgrey);
   }
 
   .program__benefit-point {
-    box-sizing: border-box;
     display: block;
+    box-sizing: border-box;
     margin: 0;
     margin-bottom: 10px;
 
