@@ -1,6 +1,10 @@
 .reviews {
   box-sizing: border-box;
   padding: 82px 8px;
+
+  background-image: url("../img/reviews/bg-reviews-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: -47px 0;
 }
 
 .reviews__heading {
@@ -10,7 +14,7 @@
 
   text-align: center;
 
-  @include bold (24px, 1.25em, $black);
+  @include bold(24px, 1.25em, $black);
 }
 
 .reviews__list {
@@ -101,4 +105,26 @@
 
 .reviews__articles-list {
   display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews {
+    padding: 88px 94px 66px;
+
+    background-image: url("../img/reviews/bg-reviews-tablet.svg");
+    background-position: -4px 0;
+  }
+
+  .reviews__heading {
+    margin-bottom: 64px;
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .reviews__item {
+
+    &:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
 }
