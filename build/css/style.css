@@ -165,6 +165,53 @@
   color: #636363;
 }
 
+@media (min-width: 768px) {
+  .about-teacher {
+    padding: 50px 94px;
+    padding-top: 64px;
+  }
+
+  .about-teacher__heading {
+    margin-bottom: 76px;
+
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .about-teacher__video {
+    width: 573px;
+    height: 392px;
+    margin-bottom: 72px;
+  }
+
+  .about-teacher__video-image {
+    width: 573px;
+    height: 392px;
+  }
+
+  .about-teacher__features {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .about-teacher__feature:nth-child(odd) {
+    width: 260px;
+    margin-right: 74px;
+  }
+
+  .about-teacher__feature:nth-child(even) {
+    width: 246px;
+  }
+
+  .about-teacher__feature:not(:last-child) {
+    margin-bottom: 82px;
+  }
+}
+
 .body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1642,6 +1689,10 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 82px 8px;
+
+  background-image: url("../img/reviews/bg-reviews-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: -47px 0;
 }
 
 .reviews__heading {
@@ -1761,6 +1812,119 @@
 
 .reviews__articles-list {
   display: none;
+}
+
+@media (min-width: 768px) {
+  .reviews {
+    padding: 82px 94px;
+
+    background-image: url("../img/reviews/bg-reviews-mobile.svg");
+    background-position: -47px 0;
+  }
+
+  .reviews__heading {
+    margin-bottom: 48px;
+
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .reviews__item {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .reviews__item:not(:last-child) {
+    margin-bottom: 38px;
+  }
+
+  .reviews__content {
+    position: relative;
+
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
+    margin: 0;
+    margin-bottom: 32px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    padding-left: 50px;
+
+    background-color: #ffffff;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 10px 30px rgba(47, 55, 237, 0.1);
+            box-shadow: 0 10px 30px rgba(47, 55, 237, 0.1);
+  }
+
+  .reviews__content::after {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 26px;
+
+    -webkit-box-sizing: border-box;
+
+            box-sizing: border-box;
+    width: 18px;
+    height: 15px;
+
+    background-image: url("../img/reviews/reviews-vector.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  .reviews__author {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 20px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.44em;
+    font-family: "montserrat-regular", "Arial", sans-serif;
+    color: #636363;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .reviews__text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.72em;
+    font-family: "montserrat-regular", "Arial", sans-serif;
+    color: #636363;
+  }
+
+  .reviews__photo-wrapper {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 74px;
+    height: 74px;
+    margin: 0;
+    overflow: hidden;
+
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  .reviews__author-photo {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 74px;
+    max-width: 100%;
+    height: 74px;
+    height: auto;
+  }
+
+  .reviews__articles-list {
+    display: none;
+  }
 }
 
 .sign-up {

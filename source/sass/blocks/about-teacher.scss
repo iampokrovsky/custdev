@@ -123,3 +123,51 @@
 
   @include regular(16px, 1.44em, $lightgrey);
 }
+
+@media (min-width: $tablet-width) {
+  .about-teacher {
+    padding: 50px 94px;
+    padding-top: 64px;
+  }
+
+  .about-teacher__heading {
+    margin-bottom: 76px;
+
+    text-align: left;
+
+    font-size: 30px;
+  }
+
+  .about-teacher__video {
+    width: 573px;
+    height: 392px;
+    margin-bottom: 72px;
+  }
+
+  .about-teacher__video-image {
+    width: 573px;
+    height: 392px;
+  }
+
+
+  .about-teacher__features {
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-teacher__feature {
+    &:nth-child(odd) {
+      width: 260px;
+      margin-right: 74px;
+    }
+
+    &:nth-child(even) {
+      width: 246px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 82px;
+    }
+  }
+}

@@ -105,16 +105,15 @@
   .result__heading {
     margin-bottom: 70px;
 
-    text-align: left;
-
     font-size: 30px;
+    text-align: left;
   }
 
   .result__point {
-    padding: 56px 62px;
-
-    padding-left: 152px;
     min-height: 278px;
+    padding: 56px 62px;
+    padding-left: 152px;
+
     background-position: 56px 56px;
 
     &:not(:last-child) {
