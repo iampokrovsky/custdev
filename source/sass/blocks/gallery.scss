@@ -31,14 +31,6 @@
   height: 135px;
   margin-right: 4px;
   margin-bottom: 6px;
-
-  // &:nth-child(odd) {
-  //   margin-right: 4px;
-  // }
-
-  // &:nth-child(n+6) {
-  //   margin-bottom: 0;
-  // }
 }
 
 .gallery__image {
@@ -47,4 +39,26 @@
   height: 135px;
 
   @include responsive-image;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery {
+    padding: 78px 0 38px;
+  }
+
+  .gallery__heading {
+    margin: 0 16px;
+    margin-bottom: 58px;
+    font-size: 30px;
+  }
+
+  .gallery__item {
+    width: 188px;
+    height: 188px;
+  }
+
+  .gallery__image {
+    width: 188px;
+    height: 188px;
+  }
 }

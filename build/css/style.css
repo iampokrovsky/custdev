@@ -475,6 +475,29 @@
   height: auto;
 }
 
+@media (min-width: 768px) {
+  .gallery {
+    padding: 78px 0 38px;
+  }
+
+  .gallery__heading {
+    margin: 0 16px;
+    margin-bottom: 58px;
+
+    font-size: 30px;
+  }
+
+  .gallery__item {
+    width: 188px;
+    height: 188px;
+  }
+
+  .gallery__image {
+    width: 188px;
+    height: 188px;
+  }
+}
+
 .header__container {
   position: relative;
 
