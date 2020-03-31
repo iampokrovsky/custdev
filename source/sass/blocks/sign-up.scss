@@ -29,3 +29,32 @@
   width: 280px;
   margin: 0 auto;
 }
+
+@media (min-width: $tablet-width) {
+  .sign-up {
+    padding: 254px 94px 130px;
+    background-image: url("../img/sign-up/bg-sign-up-tablet.svg");
+    margin-top: -106px;
+  }
+
+  .sign-up__form {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .sign-up__input {
+    width: 280px;
+    margin-bottom: 32px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  .sign-up__form-button {
+    margin: 0;
+  }
+}

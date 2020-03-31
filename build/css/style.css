@@ -260,7 +260,7 @@
           box-sizing: border-box;
   padding: 190px 20px 24px;
 
-  background-image: url("../img/cost-included/cost-included-bg.svg");
+  background-image: url("../img/cost-included/bg-cost-included-mobile.svg");
   background-repeat: no-repeat;
   background-position: -425px 0;
 }
@@ -418,6 +418,45 @@
   -webkit-transition: 0.2s ease-in-out;
 
   transition: 0.2s ease-in-out;
+}
+
+@media (min-width: 768px) {
+  .cost-included {
+    padding: 154px 94px 232px;
+
+    background-image: url("../img/cost-included/bg-cost-included-tablet.svg");
+    background-position: -247px -16px;
+  }
+
+  .cost-included__heading {
+    margin-bottom: 58px;
+
+    font-size: 30px;
+  }
+
+  .cost-included__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .cost-included__item {
+    width: 282px;
+    margin-bottom: 16px;
+  }
+
+  .cost-included__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .cost-included__item--subscription {
+    background-position: 54px 60px;
+  }
 }
 
 .gallery {
@@ -1145,9 +1184,6 @@
 @media (min-width: 768px) {
   .pricing {
     padding: 32px 94px 34px;
-    padding-bottom: 34px;
-
-    border-bottom: 1px solid #000000;
   }
 
   .pricing__heading {
@@ -1935,6 +1971,44 @@
           box-sizing: border-box;
   width: 280px;
   margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .sign-up {
+    margin-top: -106px;
+    padding: 254px 94px 130px;
+
+    background-image: url("../img/sign-up/bg-sign-up-tablet.svg");
+  }
+
+  .sign-up__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .sign-up__input {
+    width: 280px;
+    margin-bottom: 32px;
+  }
+
+  .sign-up__input:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .sign-up__form-button {
+    margin: 0;
+  }
 }
 
 .statistics {
