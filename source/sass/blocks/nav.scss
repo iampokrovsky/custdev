@@ -2,11 +2,6 @@
   display: flex;
   box-sizing: border-box;
   margin-bottom: 72px;
-
-  &--no-js {
-    // flex-direction: row-reverse;
-    // justify-content: space-between;
-  }
 }
 
 .nav__cities {
@@ -38,65 +33,8 @@
 
   @media (max-width: $only-portable) {
     .nav__cities {
-      position: relative;
-
       display: block;
-      box-sizing: border-box;
-      min-width: 166px;
-      margin: 0;
       margin-right: 112px;
-      padding: 0;
-      padding-top: 36px;
-
-      list-style: none;
-      color: rgba(0, 0, 0, 0);
-
-      visibility: hidden;
-
-      transition: 0.2s ease-in-out;
-
-      &--visible {
-        color: $blue;
-
-        visibility: visible;
-      }
-
-      &--no-js {
-        color: $blue;
-
-        visibility: visible;
-      }
-    }
-
-    .nav__city {
-      box-sizing: border-box;
-      margin-bottom: 20px;
-
-      @include regular(14px, 1.2em, inherit);
-
-      &--current {
-        position: absolute;
-        top: 0;
-        left: 0;
-
-        background-image: url("../img/nav/nav-vector.svg");
-        background-repeat: no-repeat;
-        background-position: right center;
-        visibility: visible;
-
-        @include bold(14px, 1.2em, $blue);
-      }
-    }
-
-    .nav__city-link {
-      display: block;
-      box-sizing: border-box;
-      padding-right: 22px;
-
-      font: inherit;
-      color: inherit;
-      text-transform: uppercase;
-      text-decoration: none;
     }
   }
 }

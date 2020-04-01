@@ -140,12 +140,14 @@
 @media (min-width: $tablet-width) {
   .cost-included {
     padding: 154px 94px 232px;
+
     background-image: url("../img/cost-included/bg-cost-included-tablet.svg");
     background-position: -247px -16px;
   }
 
   .cost-included__heading {
     margin-bottom: 58px;
+
     font-size: 30px;
   }
 

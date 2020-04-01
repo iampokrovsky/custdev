@@ -32,17 +32,18 @@
 
 @media (min-width: $tablet-width) {
   .sign-up {
-    padding: 254px 94px 130px;
-    background-image: url("../img/sign-up/bg-sign-up-tablet.svg");
     margin-top: -106px;
+    padding: 254px 94px 130px;
+
+    background-image: url("../img/sign-up/bg-sign-up-tablet.svg");
   }
 
   .sign-up__form {
-    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    box-sizing: border-box;
   }
 
   .sign-up__input {
