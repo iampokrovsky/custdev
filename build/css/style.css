@@ -165,7 +165,7 @@
   color: #636363;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .about-teacher {
     padding: 64px 94px 60px;
   }
@@ -245,7 +245,7 @@
   transition: 0.1s ease-in-out;
 }
 
-@media (min-width: 5000px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .cities {
     position: relative;
 
@@ -323,7 +323,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 320px;
-  width: 100%;
+  width: 768px;
   min-width: 320px;
   max-width: 1150px;
   margin: 0 auto;
@@ -494,7 +494,7 @@
   transition: 0.2s ease-in-out;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .cost-included {
     padding: 154px 94px 232px;
 
@@ -588,7 +588,7 @@
   height: auto;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .gallery {
     padding: 78px 0 38px;
   }
@@ -626,7 +626,7 @@
   background-position: -480px -480px, -480px -480px;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .header__container {
     padding: 42px 16px;
 
@@ -693,6 +693,13 @@
 
 .info__city:not(:last-child) {
   margin-bottom: 16px;
+}
+
+.info__city-link {
+  font: inherit;
+  color: inherit;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .info__join-button {
@@ -993,7 +1000,7 @@
   }
 }
 
-@media (max-width: 1439px) and (min-width: 5000px) {
+@media (max-width: 1439px) and (min-width: 768px) {
   .menu--no-js {
     margin-right: auto;
   }
@@ -1038,7 +1045,7 @@
   border: none;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .nav {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1051,7 +1058,7 @@
   }
 }
 
-@media (min-width: 5000px) and (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .nav__cities {
     display: block;
     margin-right: 112px;
@@ -1188,7 +1195,7 @@
   width: 196px;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .pricing {
     padding: 32px 94px 34px;
   }
@@ -1322,7 +1329,7 @@
   display: none;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .program {
     position: relative;
 
@@ -1596,7 +1603,7 @@
   background-position: center right;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .promo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1760,7 +1767,7 @@
   color: #636363;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .result {
     padding: 212px 106px 238px 96px;
 
@@ -1922,7 +1929,7 @@
   display: none;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .reviews {
     padding: 88px 94px 66px;
 
@@ -1980,7 +1987,7 @@
   margin: 0 auto;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .sign-up {
     margin-top: -106px;
     padding: 254px 94px 130px;
@@ -2078,7 +2085,7 @@
   color: #2f80ed;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .statistics {
     padding: 16px 94px 50px;
   }
@@ -2191,7 +2198,7 @@
   color: #636363;
 }
 
-@media (min-width: 5000px) {
+@media (min-width: 768px) {
   .who-needs {
     padding: 76px 46px 124px 94px;
 
