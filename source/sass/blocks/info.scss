@@ -27,8 +27,12 @@
 
   @include regular(14px, 1.2em, $white);
 
+  &:hover {
+    font-weight: bold;
+  }
+
   &--current {
-    @include bold(14px, 1.2em, $white);
+    font-weight: bold;
   }
 
   &:not(:last-child) {
@@ -68,7 +72,7 @@
   box-sizing: border-box;
   margin: 0;
 
-  @include regular(14px, 1.2em, $white);
+  @include regular(14px, 1.2em, rgba($white, 0.7));
 }
 
 .info__docs {
@@ -94,6 +98,49 @@
 
   text-align: center;
   text-decoration: none;
+  transition: 0.1s ease-in-out;
 
-  @include regular(14px, 1.2em, $white);
+  @include regular(14px, 1.2em, rgba($white, 0.7));
+
+  &:hover {
+    color: rgba($white, 1);
+  }
+
+  &:active {
+    color: rgba($white, 0.5);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .info__top {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 16px 50px;
+  }
+
+  .info__cities {
+    flex-direction: row;
+    margin-bottom: 0;
+  }
+
+  .info__city {
+    &:not(:last-child) {
+      margin-bottom: 0;
+      margin-right: 26px;
+    }
+  }
+
+  .info__bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 18px 16px;
+  }
+
+  .info__docs {
+    margin-bottom: 0;
+  }
+
+  .info__doc-link {
+    text-align: left;
+  }
 }
