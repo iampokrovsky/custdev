@@ -133,7 +133,8 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     box-sizing: border-box;
-    padding-left: 28px;
+    // padding-left: 28px;
+    padding-left: 28 / 768 * 100%;
   }
 
   .promo__invite {
@@ -162,6 +163,7 @@
 
   .promo__reviews-list {
     margin-top: 308px;
-    margin-right: 20px;
+    // margin-right: 20px;
+    margin-right: 20 / 736.03 * 100%;
   }
 }

@@ -14,7 +14,9 @@
 
 @media (min-width: $tablet-width) {
   .header__container {
-    padding: 42px 16px;
+    padding: 42px 0;
+    padding-right: 16 / 768 * 100%;
+    padding-left: 16 / 768 * 100%;
 
     background-image: url("../img/header/bg-header-photo.png"),
       url("../img/header/bg-header.svg");
