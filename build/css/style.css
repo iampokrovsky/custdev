@@ -194,16 +194,13 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    margin-right: -3.33333%;
     padding: 0;
   }
 
-  .about-teacher__feature:nth-child(odd) {
-    width: 260px;
-    margin-right: 74px;
-  }
-
-  .about-teacher__feature:nth-child(even) {
-    width: 246px;
+  .about-teacher__feature {
+    width: 280px;
+    margin-right: 3.33333%;
   }
 
   .about-teacher__feature:not(:last-child) {
@@ -322,11 +319,9 @@
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 320px;
   width: 768px;
   width: 100%;
-  min-width: 320px;
-  max-width: 1150px;
+  max-width: 1439px;
   margin: 0 auto;
 }
 
@@ -1394,6 +1389,7 @@
   .program {
     position: relative;
 
+    min-height: 595px;
     padding: 34px 94px 68px 94px;
   }
 
@@ -1410,17 +1406,17 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-bottom: 4px;
+    margin-right: -16.66667%;
+    margin-bottom: 24px;
     padding: 0;
   }
 
-  .program__item:nth-child(odd) {
-    width: 200px;
-    margin-right: 100px;
+  .program__item {
+    width: 33.33333%;
   }
 
-  .program__item:nth-child(even) {
-    width: 240px;
+  .program__item:nth-child(odd) {
+    margin-right: 16.66667%;
   }
 
   .program__item:not(:last-child) {
@@ -1434,7 +1430,7 @@
 
   .program__benefits {
     position: absolute;
-    right: 94px;
+    right: 12.23958%;
     bottom: 20px;
 
     display: block;

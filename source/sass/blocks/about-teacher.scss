@@ -147,22 +147,25 @@
     height: 392px;
   }
 
-
   .about-teacher__features {
     display: flex;
     flex-wrap: wrap;
+    margin-right: 20 / 600 * (-1) * 100%;
     padding: 0;
   }
 
   .about-teacher__feature {
-    &:nth-child(odd) {
-      width: 260px;
-      margin-right: 74px;
-    }
+    width: 280px;
+    margin-right: 20 / 600 * 100%;
 
-    &:nth-child(even) {
-      width: 246px;
-    }
+    // &:nth-child(odd) {
+    //   width: 260px;
+    //   margin-right: 74px;
+    // }
+
+    // &:nth-child(even) {
+    //   width: 246px;
+    // }
 
     &:not(:last-child) {
       margin-bottom: 82px;

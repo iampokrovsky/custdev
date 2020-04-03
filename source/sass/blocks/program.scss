@@ -79,6 +79,7 @@
   .program {
     position: relative;
 
+    min-height: 595px;
     padding: 34px 94px 68px 94px;
   }
 
@@ -92,18 +93,16 @@
   .program__list {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 4px;
+    margin-right: 100 / 600 * (-1) * 100%;
+    margin-bottom: 24px;
     padding: 0;
   }
 
   .program__item {
-    &:nth-child(odd) {
-      width: 200px;
-      margin-right: 100px;
-    }
+    width: 200 / 600 * 100%;
 
-    &:nth-child(even) {
-      width: 240px;
+    &:nth-child(odd) {
+      margin-right: 100 / 600 * 100%;
     }
 
     &:not(:last-child) {
@@ -118,7 +117,7 @@
 
   .program__benefits {
     position: absolute;
-    right: 94px;
+    right: 94 / 768 * 100%;
     bottom: 20px;
 
     display: block;

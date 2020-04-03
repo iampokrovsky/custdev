@@ -52,16 +52,12 @@
     padding: 76px 46px 124px 94px;
 
     background-image: url("../img/who-needs/bg-who-needs.svg");
-    // background-repeat: no-repeat;
     background-position: -24px -64px;
   }
 
   .who-needs__heading {
     width: 420px;
-    // box-sizing: border-box;
-    // margin: 0;
     margin-bottom: 82px;
-    // @include bold(24px, 1.25em, $black);
 
     font-size: 30px;
   }
@@ -69,37 +65,15 @@
   .who-needs__list {
     display: flex;
     justify-content: space-between;
-    // margin: 0;
-    // padding: 0;
-    // padding-right: 32px;
     padding-right: 0;
-
-    // list-style: none;
   }
 
   .who-needs__item {
     width: 178 / 628 * 100%;
-    // box-sizing: border-box;
-    // margin-bottom: 32px;
     margin-bottom: 0;
   }
 
   .who-needs__item-heading {
-    // box-sizing: border-box;
-    // margin: 0;
     margin-bottom: 10px;
-
-    // font-weight: 600;
-    // text-transform: uppercase;
-    // letter-spacing: 0.05em;
-
-    // @include regular(14px, 1.44em, $blue);
-  }
-
-  .who-needs__item-description {
-    // box-sizing: border-box;
-    // margin: 0;
-
-    // @include regular(14px, 1.44em, $lightgrey);
   }
 }
