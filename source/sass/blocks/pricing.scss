@@ -89,7 +89,7 @@
 
 @media (min-width: $tablet-width) {
   .pricing {
-    padding: 32px 94px 34px;
+    padding: 32px 84px 34px;
   }
 
   .pricing__heading {
@@ -101,11 +101,13 @@
   .pricing__packages {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
   }
 
   .pricing__package {
+    width: 278 / 580 * 100%;
+    
     &:not(:last-child) {
       margin-bottom: 30px;
     }

@@ -324,6 +324,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 768px;
+  width: 100%;
   max-width: 1439px;
   margin: 0 auto;
 }
@@ -1256,7 +1257,7 @@
 
 @media (min-width: 768px) {
   .pricing {
-    padding: 32px 94px 34px;
+    padding: 32px 84px 34px;
   }
 
   .pricing__heading {
@@ -1271,12 +1272,15 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+  }
+
+  .pricing__package {
+    width: 47.93103%;
   }
 
   .pricing__package:not(:last-child) {
