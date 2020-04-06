@@ -194,13 +194,17 @@
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin-right: -3.33333%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     padding: 0;
   }
 
   .about-teacher__feature {
-    width: 280px;
-    margin-right: 3.33333%;
+    width: 44.82759%;
   }
 
   .about-teacher__feature:not(:last-child) {
@@ -320,7 +324,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 768px;
-  width: 100%;
   max-width: 1439px;
   margin: 0 auto;
 }

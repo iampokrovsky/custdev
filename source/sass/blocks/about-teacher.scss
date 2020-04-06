@@ -150,22 +150,13 @@
   .about-teacher__features {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 20 / 600 * (-1) * 100%;
+    justify-content: space-between;
+    align-items: flex-start;
     padding: 0;
   }
 
   .about-teacher__feature {
-    width: 280px;
-    margin-right: 20 / 600 * 100%;
-
-    // &:nth-child(odd) {
-    //   width: 260px;
-    //   margin-right: 74px;
-    // }
-
-    // &:nth-child(even) {
-    //   width: 246px;
-    // }
+    width: 260 / 580 * 100%;
 
     &:not(:last-child) {
       margin-bottom: 82px;
