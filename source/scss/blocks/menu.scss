@@ -1,0 +1,189 @@
+.menu__list {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.menu__item {
+  box-sizing: border-box;
+}
+
+.menu__link {
+  box-sizing: border-box;
+
+  text-decoration: none;
+}
+
+@media (max-width: $only-portable) {
+  .menu {
+    box-sizing: border-box;
+
+    &--no-js {
+      order: 1;
+      margin-left: auto;
+    }
+  }
+
+  .menu__button {
+    position: absolute;
+    top: 22px;
+    right: 8 / 320 * 100%;
+    z-index: 1;
+
+    box-sizing: border-box;
+    width: 30px;
+    height: 30px;
+
+    background: none;
+    background-image: url("../img/menu/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+
+    &--close {
+      background-image: url("../img/menu/icon-menu-close.svg");
+    }
+
+    &--no-js {
+      display: none;
+    }
+  }
+
+  @keyframes bubble {
+    from {
+      transform: scale(1);
+    }
+
+    to {
+      transform: scale(12);
+    }
+  }
+
+  @keyframes opacify {
+    from {
+      color: rgba($blue, 0);
+    }
+
+    to {
+      color: rgba($blue, 1);
+    }
+  }
+
+  .menu__list {
+    position: absolute;
+    top: 10px;
+    right: 2 / 320 * 100%;
+    z-index: 0;
+
+    display: none;
+    width: 184px;
+    padding: 20px 35px 20px 10px;
+    overflow: hidden;
+
+    color: $blue;
+
+    border-radius: 10px;
+
+    &--open {
+      animation: opacify;
+      animation-duration: 0.15s;
+      animation-delay: 0.15s;
+
+      animation-fill-mode: both;
+    }
+
+    &--close {
+      animation: opacify;
+      animation-duration: 0.15s;
+      animation-direction: reverse;
+
+      animation-fill-mode: both;
+    }
+
+    &--visible {
+      display: block;
+    }
+
+    &--no-js {
+      position: static;
+
+      display: block;
+      width: auto;
+      height: auto;
+      padding: 0;
+
+      color: $white;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 6px;
+      right: 0;
+      z-index: -1;
+
+      display: none;
+      box-sizing: border-box;
+      width: 42px;
+      height: 42px;
+
+      background-color: $white;
+      border-radius: 50%;
+      transform: scale(12);
+    }
+
+    &--visible::before {
+      display: block;
+    }
+
+    &--open::before {
+      animation-name: bubble;
+      animation-duration: 0.3s;
+
+      animation-fill-mode: both;
+    }
+
+    &--close::before {
+      animation-name: bubble;
+      animation-duration: 0.3s;
+      animation-direction: reverse;
+
+      animation-fill-mode: both;
+    }
+  }
+
+  .menu__item {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .menu__link {
+    @include regular(14px, 1.44em, inherit);
+
+    &:hover {
+      font-weight: 700;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    .menu {
+      &--no-js {
+        margin-right: auto;
+      }
+    }
+
+    .menu__list {
+      top: 20px;
+      right: 4 / 768 * 100%;
+    }
+
+    .menu__button {
+      top: 33px;
+      right: 16 / 768 * 100%;
+    }
+  }
+}
