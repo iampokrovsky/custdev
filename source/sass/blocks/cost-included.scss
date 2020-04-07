@@ -158,7 +158,7 @@
   }
 
   .cost-included__item {
-    width: 282px;
+    width: 282 / 580 * 100%;
     margin-bottom: 16px;
 
     &:not(:last-child) {
