@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: center;
   box-sizing: border-box;
-  padding: 46px 8px 46px;
+  padding: 46px 0 46px;
+  padding-right: 8 / 320 * 100%;
+  padding-left: 8 / 320 * 100%;
 
   background-color: $blue;
 }
@@ -63,7 +65,9 @@
   flex-direction: column-reverse;
   align-items: center;
   box-sizing: border-box;
-  padding: 42px 8px 46px;
+  padding: 42px 0 46px;
+  padding-right: 8 / 320 * 100%;
+  padding-left: 8 / 320 * 100%;
 
   background-color: #185fbf;
 }
@@ -116,7 +120,9 @@
   .info__top {
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px 16px 50px;
+    padding: 50px 0 50px;
+    padding-right: 16 / 768 * 100%;
+    padding-left: 16 / 768 * 100%;
   }
 
   .info__cities {
@@ -134,7 +140,9 @@
   .info__bottom {
     flex-direction: row;
     justify-content: space-between;
-    padding: 18px 16px;
+    padding: 18px 0;
+    padding-right: 16 / 768 * 100%;
+    padding-left: 16 / 768 * 100%;
   }
 
   .info__docs {
