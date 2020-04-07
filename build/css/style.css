@@ -1443,6 +1443,7 @@
     display: block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    width: 36.45833%;
     margin: 0;
     padding: 0;
 
@@ -1470,8 +1471,7 @@
   .program__benefit {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    width: 280px;
-    height: 212px;
+    width: 100%;
     padding: 58px 40px;
     padding-right: 30px;
     overflow: hidden;

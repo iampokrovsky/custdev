@@ -118,6 +118,7 @@
   .program__benefits {
     position: absolute;
     right: 94 / 768 * 100%;
+    width: 280 / 768 * 100%;
     bottom: 20px;
 
     display: block;
@@ -146,8 +147,7 @@
 
   .program__benefit {
     box-sizing: border-box;
-    width: 280px;
-    height: 212px;
+    width: 100%;
     padding: 58px 40px;
     padding-right: 30px;
     overflow: hidden;
