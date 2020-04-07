@@ -2076,7 +2076,7 @@
   }
 
   .sign-up__input {
-    width: 280px;
+    width: 48.27586%;
     margin-bottom: 32px;
   }
 
@@ -2085,6 +2085,7 @@
   }
 
   .sign-up__form-button {
+    width: 48.27586%;
     margin: 0;
   }
 }
