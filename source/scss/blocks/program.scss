@@ -93,7 +93,6 @@
   .program__list {
     display: flex;
     flex-wrap: wrap;
-    margin-right: 100 / 600 * (-1) * 100%;
     margin-bottom: 24px;
     padding: 0;
   }
@@ -102,7 +101,7 @@
     width: 200 / 600 * 100%;
 
     &:nth-child(odd) {
-      margin-right: 100 / 600 * 100%;
+      margin-right: 108 / 580 * 100%;
     }
 
     &:not(:last-child) {
@@ -118,11 +117,11 @@
   .program__benefits {
     position: absolute;
     right: 94 / 768 * 100%;
-    width: 280 / 768 * 100%;
     bottom: 20px;
 
     display: block;
     box-sizing: border-box;
+    width: 280 / 768 * 100%;
     margin: 0;
     padding: 0;
 
