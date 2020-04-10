@@ -173,3 +173,28 @@
     @include regular(14px, 1.44em, $blue);
   }
 }
+
+@media (min-width: $desktop-width) {
+  .program {
+    padding: 102px 235px 0;
+  }
+
+  .program__heading {
+    margin-bottom: 45px;
+  }
+
+  .program__list {
+    width: 570px;
+    margin-bottom: 36px;
+  }
+
+  .program__link-wrapper {
+    width: auto;
+  }
+
+  .program__benefits {
+    right: 235px;
+    bottom: 166px;
+    width: 330px;
+  }
+}
