@@ -15,11 +15,22 @@
 @media (min-width: $tablet-width) {
   .header__container {
     padding: 42px 0;
+    padding-top: 52px;
     padding-right: 16 / 768 * 100%;
     padding-left: 16 / 768 * 100%;
 
     background-image: url("../img/header/bg-header-photo.png"),
       url("../img/header/bg-header.svg");
     background-position: -120px -480px, -120px -480px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header__container {
+    padding: 32px 130px 44px;
+
+    background-image: url("../img/header/bg-header-photo.png"),
+      url("../img/header/bg-header.svg");
+    background-position: -103.5px -480px, -103.5px -480px;
   }
 }

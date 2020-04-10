@@ -133,8 +133,8 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     box-sizing: border-box;
-    // padding-left: 28px;
     padding-left: 28 / 768 * 100%;
+    padding-left: calc(-145.983894997123px + 23.63808842511236%);
   }
 
   .promo__invite {
@@ -163,7 +163,31 @@
 
   .promo__reviews-list {
     margin-top: 308px;
-    // margin-right: 20px;
-    margin-right: 20 / 736.03 * 100%;
+    margin-right: calc(-268.4025473867291px + 40.7321191088627%);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    padding-left: 55px;
+  }
+
+  .promo__place-n-date {
+    font-size: 16px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 20px;
+
+    font-size: 40px;
+  }
+
+  .promo__note {
+    margin-bottom: 26px;
+  }
+
+  .promo__reviews-list {
+    margin-top: 280px;
+    margin-right: 318px;
   }
 }

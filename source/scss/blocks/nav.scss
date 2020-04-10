@@ -11,12 +11,8 @@
 .nav__join-button {
   display: block;
   box-sizing: border-box;
-  padding: 0;
 
   text-transform: none;
-
-  background: none;
-  border: none;
 
   @include regular(14px, 1.44em, $white);
 }
@@ -25,16 +21,50 @@
   .nav {
     align-items: flex-start;
     margin-bottom: 14px;
-
-    &--no-js {
-      margin-bottom: 54px;
-    }
   }
 
   @media (max-width: $only-portable) {
+    .nav {
+      &--no-js {
+        margin-bottom: 54px;
+      }
+    }
+
     .nav__cities {
       display: block;
-      margin-right: calc(6.214162641584047% + 66.26189870914894px);
+      margin-right: calc(-293.1982333639177px + 55.05186383216957%);
     }
+  }
+}
+
+@media (max-width: $only-portable) {
+  .nav__join-button {
+    padding: 0;
+
+    text-transform: none;
+
+    background: none;
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .nav {
+    margin-bottom: 92px;
+    align-items: center;
+  }
+
+  .nav__cities {
+    display: flex;
+    align-items: center;
+    margin-right: 160px;
+  }
+
+  .nav__join-button {
+    padding: 10px 26px;
+
+    color: $blue;
+
+    background-color: $white;
   }
 }

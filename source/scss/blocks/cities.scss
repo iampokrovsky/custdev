@@ -60,3 +60,48 @@
     text-decoration: none;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cities {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .cities__item {
+    box-sizing: border-box;
+
+    text-transform: uppercase;
+
+    @include regular(14px, 1.2em, $white);
+
+    &:hover {
+      font-weight: bold;
+    }
+
+    &--current {
+      font-weight: bold;
+    }
+
+    &:first-child {
+      color: $blue;
+    }
+
+    &:not(:last-child) {
+      margin-right: 25px;
+    }
+  }
+
+  .cities__link {
+    box-sizing: border-box;
+
+    font: inherit;
+    color: inherit;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}
