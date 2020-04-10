@@ -77,3 +77,20 @@
     margin-bottom: 10px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .who-needs {
+    padding: 168px 204px 192px 336px;
+    background-position: 66px -24px;
+  }
+
+  .who-needs__heading {
+    width: auto;
+    margin-bottom: 60px;
+  }
+
+  .who-needs__item-heading {
+    width: 140px;
+    margin-bottom: 10px;
+  }
+}

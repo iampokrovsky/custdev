@@ -2351,7 +2351,7 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 96px 130px 52px;
+    padding: 96px 130px 14px;
   }
 
   .statistics__heading {
@@ -2481,6 +2481,24 @@
   }
 
   .who-needs__item-heading {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .who-needs {
+    padding: 168px 204px 192px 336px;
+
+    background-position: 66px -24px;
+  }
+
+  .who-needs__heading {
+    width: auto;
+    margin-bottom: 60px;
+  }
+
+  .who-needs__item-heading {
+    width: 140px;
     margin-bottom: 10px;
   }
 }
