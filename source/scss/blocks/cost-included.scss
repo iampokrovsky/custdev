@@ -140,8 +140,9 @@
 @media (min-width: $tablet-width) {
   .cost-included {
     padding: 154px 94px 234px;
+
     background-image: url("../img/cost-included/bg-cost-included-tablet.svg"),
-    url("../img/sign-up/bg-sign-up-tablet.svg");
+      url("../img/sign-up/bg-sign-up-tablet.svg");
     background-position: -247px -16px, left -229px bottom -741px;
   }
 

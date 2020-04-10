@@ -70,3 +70,25 @@
     margin-bottom: 20px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .statistics {
+    display: flex;
+    justify-content: space-between;
+    padding: 96px 130px 52px;
+  }
+
+  .statistics__heading {
+    width: 440px;
+    text-align: left;
+    margin: 150px 0 0;
+  }
+
+  .statistics__points {
+    width: 660px;
+  }
+
+  .statistics__point {
+    margin-bottom: 44px;
+  }
+}

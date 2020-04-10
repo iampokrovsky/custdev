@@ -2343,6 +2343,33 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .statistics {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 96px 130px 52px;
+  }
+
+  .statistics__heading {
+    width: 440px;
+    margin: 150px 0 0;
+
+    text-align: left;
+  }
+
+  .statistics__points {
+    width: 660px;
+  }
+
+  .statistics__point {
+    margin-bottom: 44px;
+  }
+}
+
 .visually-hidden {
   position: absolute;
 
