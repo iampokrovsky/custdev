@@ -13,6 +13,11 @@
   @include bold(24px, 1.25em, $black);
 }
 
+.about-teacher__card {
+  box-sizing: border-box;
+  margin-bottom: 74px;
+}
+
 .about-teacher__video {
   position: relative;
 
@@ -21,7 +26,6 @@
   width: 304px;
   height: 228px;
   margin: 0 auto;
-  margin-bottom: 74px;
   overflow: hidden;
 
   border-radius: 10px;
@@ -136,10 +140,13 @@
     text-align: left;
   }
 
+  .about-teacher__card {
+    margin-bottom: 72px;
+  }
+
   .about-teacher__video {
     width: 573px;
     height: 392px;
-    margin-bottom: 72px;
   }
 
   .about-teacher__video-image {
@@ -160,6 +167,72 @@
 
     &:not(:last-child) {
       margin-bottom: 82px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-teacher {
+    padding: 88px 130px 0;
+  }
+
+  .about-teacher__heading {
+    margin-bottom: 78px;
+
+    font-size: 35px;
+  }
+
+  .about-teacher__card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 86px;
+  }
+
+  .about-teacher__video {
+    width: 727px;
+    margin: 0;
+  }
+
+  .about-teacher__video-image {
+     width: 727px;
+  }
+
+  .about-teacher__badge {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 350px;
+    min-height: 218px;
+    margin-left: auto;
+    padding: 60px;
+
+    background-color: $white;
+    border-radius: 10px;
+    box-shadow: 0 30px 100px rgba(47, 55, 237, 0.1);
+  }
+
+  .about-teacher__name {
+    box-sizing: border-box;
+
+    @include bold(24px, 1.83em, $blue);
+  }
+
+  .about-teacher__position {
+    box-sizing: border-box;
+    @include regular(16px, 1.83em, $lightgrey);
+  }
+
+  .about-teacher__features {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .about-teacher__feature {
+    width: 260px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 }

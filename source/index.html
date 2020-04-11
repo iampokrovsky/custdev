@@ -226,47 +226,63 @@
 
         <section class="about-teacher" id="about-teacher">
           <h2 class="about-teacher__heading">Почему мне можно доверять</h2>
-          <a class="about-teacher__video">
-            <picture>
-              <!-- <source type="image/webp" media="(min-width: 1440px)"
-                srcset="./img/video-desktop@2x.webp 2x, ./img/video-desktop@1x.webp">
-              <source media="(min-width: 1150px)" srcset="./img/video-desktop@2x.jpg 1454w, ./img/video-desktop@1x.jpg"> -->
-              <source
-                type="image/webp"
-                media="(min-width: 768px)"
-                srcset="
-                  ./img/about-teacher/about-teacher-photo-tablet@2x.webp 2x,
-                  ./img/about-teacher/about-teacher-photo-tablet@1x.webp
-                "
-              />
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  ./img/about-teacher/about-teacher-photo-tablet@2x.jpg 2x,
-                  ./img/about-teacher/about-teacher-photo-tablet@1x.jpg
-                "
-              />
-              <source
-                type="image/webp"
-                srcset="
-                  ./img/about-teacher/about-teacher-photo-mobile@2x.webp 2x,
-                  ./img/about-teacher/about-teacher-photo-mobile@1x.webp
-                "
-              />
-              <img
-                class="about-teacher__video-image"
-                src="./img/about-teacher/about-teacher-photo-mobile@1x.jpg"
-                srcset="
-                  ./img/about-teacher/about-teacher-photo-mobile@2x.jpg 2x
-                "
-                alt="Видеоролик о преподавателе"
-              />
-            </picture>
-          </a>
-          <p class="about-teacher__badge">
-            <b class="about-teacher__name">Алексей Иванов</b>
-            <span class="about-teacher__position">Ex-Lead Product Manager</span>
-          </p>
+          <div class="about-teacher__card">
+            <a class="about-teacher__video">
+              <picture>
+                <source
+                  type="image/webp"
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/about-teacher/about-teacher-photo-desktop@2x.webp 2x,
+                    ./img/about-teacher/about-teacher-photo-desktop@1x.webp
+                  "
+                />
+                <source
+                  media="(min-width: 1440px)"
+                  srcset="
+                    ./img/about-teacher/about-teacher-photo-desktop@2x.jpg 1454w,
+                    ./img/about-teacher/about-teacher-photo-desktop@1x.jpg
+                  "
+                />
+                <source
+                  type="image/webp"
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/about-teacher/about-teacher-photo-tablet@2x.webp 2x,
+                    ./img/about-teacher/about-teacher-photo-tablet@1x.webp
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./img/about-teacher/about-teacher-photo-tablet@2x.jpg 2x,
+                    ./img/about-teacher/about-teacher-photo-tablet@1x.jpg
+                  "
+                />
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./img/about-teacher/about-teacher-photo-mobile@2x.webp 2x,
+                    ./img/about-teacher/about-teacher-photo-mobile@1x.webp
+                  "
+                />
+                <img
+                  class="about-teacher__video-image"
+                  src="./img/about-teacher/about-teacher-photo-mobile@1x.jpg"
+                  srcset="
+                    ./img/about-teacher/about-teacher-photo-mobile@2x.jpg 2x
+                  "
+                  alt="Видеоролик о преподавателе"
+                />
+              </picture>
+            </a>
+            <p class="about-teacher__badge">
+              <b class="about-teacher__name">Алексей Иванов</b>
+              <span class="about-teacher__position"
+                >Ex-Lead Product Manager</span
+              >
+            </p>
+          </div>
           <ul class="about-teacher__features">
             <li
               class="about-teacher__feature about-teacher__feature--experience"
