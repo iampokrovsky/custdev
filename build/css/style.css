@@ -2050,6 +2050,52 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .result {
+    padding: 162px 130px 60px;
+
+    background-image: url("../img/result/bg-result-desktop.svg");
+    background-position: -407px -5px;
+  }
+
+  .result__heading {
+    margin-bottom: 54px;
+
+    font-size: 35px;
+  }
+
+  .result__points {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .result__point {
+    width: 566px;
+  }
+
+  .result__point:not(:last-child) {
+    margin-bottom: 0;
+  }
+
+  .result__point:nth-child(-n + 2) {
+    margin-bottom: 40px;
+  }
+
+  .result__point-heading {
+    font-size: 16px;
+  }
+
+  .result__point-description {
+    font-size: 16px;
+  }
+}
+
 .reviews {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

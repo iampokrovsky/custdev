@@ -125,3 +125,43 @@
     line-height: 1.44em;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .result {
+    padding: 162px 130px 60px;
+
+    background-image: url("../img/result/bg-result-desktop.svg");
+    background-position: -407px -5px;
+  }
+
+  .result__heading {
+    margin-bottom: 54px;
+    font-size: 35px;
+  }
+
+  .result__points {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .result__point {
+    width: 566px;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(-n + 2) {
+      margin-bottom: 40px;
+    }
+  }
+
+  .result__point-heading  {
+    font-size: 16px;
+  }
+
+  .result__point-description {
+    font-size: 16px;
+  }
+}
