@@ -2684,6 +2684,38 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .sign-up {
+    padding: 110px 130px 84px;
+
+    background-image: url("../img/sign-up/bg-sign-up-tablet.svg");
+    background-position: -229px -146px;
+  }
+
+  .sign-up__form {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  .sign-up__input {
+    width: 266px;
+    margin-bottom: 0;
+  }
+
+  .sign-up__form-button {
+    width: 260px;
+    margin: 0;
+  }
+}
+
 .statistics {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

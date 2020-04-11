@@ -60,3 +60,36 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .sign-up {
+    padding: 110px 130px 84px;
+
+    background-image: url("../img/sign-up/bg-sign-up-tablet.svg");
+    background-position: -229px -146px;
+  }
+
+  .sign-up__form {
+    // display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+  }
+
+  .sign-up__input {
+    // width: 280 / 580 * 100%;
+    width: 266px;
+    margin-bottom: 0;
+
+    // &:last-of-type {
+    //   margin-bottom: 0;
+    // }
+  }
+
+  .sign-up__form-button {
+    // width: 280 / 580 * 100%;
+    width: 260px;
+    margin: 0;
+  }
+}
