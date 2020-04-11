@@ -194,7 +194,7 @@
   }
 
   .about-teacher__video-image {
-     width: 727px;
+    width: 727px;
   }
 
   .about-teacher__badge {
@@ -220,6 +220,7 @@
 
   .about-teacher__position {
     box-sizing: border-box;
+
     @include regular(16px, 1.83em, $lightgrey);
   }
 

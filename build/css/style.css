@@ -764,6 +764,36 @@
   }
 }
 
+@media (min-width: 1440px) {
+  .gallery {
+    padding: 52px 0;
+  }
+
+  .gallery__heading {
+    margin: 0 130px;
+    margin-bottom: 60px;
+  }
+
+  .gallery__list {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .gallery__item {
+    width: 340px;
+    height: 266px;
+    margin-right: 0;
+    margin-bottom: 22px;
+  }
+
+  .gallery__image {
+    width: 340px;
+    height: 266px;
+  }
+}
+
 .header__container {
   position: relative;
 

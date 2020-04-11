@@ -132,6 +132,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     position: relative;
+
     padding: 64px 130px 80px;
 
     background-image: url("../img/reviews/bg-reviews-desktop.svg");
@@ -165,37 +166,42 @@
   }
 
   .reviews__articles-list {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: block;
     position: absolute;
     right: 114px;
     bottom: 34px;
+
+    display: block;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
   }
 
   .reviews__article {
     box-sizing: border-box;
     width: 300px;
-    overflow: hidden;
     height: 300px;
-    border-radius: 50%;
+    padding: 80px;
+    padding-top: 134px;
+    overflow: hidden;
+
+    text-align: center;
+
     background-image: url("../img/reviews/reviews-doc-icon.svg"),
       url("../img/reviews/reviews-article-bg.svg");
     background-repeat: no-repeat;
     background-position: top 62px center, center;
-    text-align: center;
-    padding: 80px;
-    padding-top: 134px;
+    border-radius: 50%;
   }
 
   .reviews__article-heading {
     box-sizing: border-box;
     width: 110px;
     margin: 0 auto;
-    padding: 0;
     margin-bottom: 16px;
+    padding: 0;
+
     @include regular(12px, 1.44em, $blue);
   }
 
