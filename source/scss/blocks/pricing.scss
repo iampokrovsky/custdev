@@ -61,11 +61,18 @@
   }
 }
 
+.pricing__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
 .pricing__name {
   order: 2;
   box-sizing: border-box;
   margin: 0;
-  margin-bottom: 40px;
 
   font-weight: 600;
 
@@ -121,5 +128,55 @@
 
       font-size: 12px;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pricing {
+    padding: 34px 270px;
+  }
+
+
+  .pricing__packages {
+    justify-content: space-between;
+  }
+
+  .pricing__package {
+    width: auto;
+
+    &:not(:last-child) {
+      width: 270px;
+      margin-bottom: 42px;
+    }
+
+    &:last-child {
+      width: 570px;
+      flex-direction: row;
+      margin: 0 auto;
+      justify-content: space-between;
+      padding: 45px 84px;
+    }
+  }
+
+   .pricing__package:last-child .pricing__description {
+     margin-bottom: 0;
+   }
+
+  .pricing__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+
+
+  .pricing__name {
+    font-style: 16px;
+  }
+
+  .pricing__cost {
+    font-size: 25px;
+    margin-bottom: 6px;
   }
 }

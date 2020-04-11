@@ -1479,6 +1479,22 @@
   border-radius: 50%;
 }
 
+.pricing__description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 40px;
+}
+
 .pricing__name {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
@@ -1486,7 +1502,6 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
-  margin-bottom: 40px;
 
   font-weight: 600;
   font-size: 16px;
@@ -1559,6 +1574,70 @@
     height: 90px;
 
     font-size: 12px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pricing {
+    padding: 34px 270px;
+  }
+
+  .pricing__packages {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .pricing__package {
+    width: auto;
+  }
+
+  .pricing__package:not(:last-child) {
+    width: 270px;
+    margin-bottom: 42px;
+  }
+
+  .pricing__package:last-child {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 570px;
+    margin: 0 auto;
+    padding: 45px 84px;
+  }
+
+  .pricing__package:last-child .pricing__description {
+    margin-bottom: 0;
+  }
+
+  .pricing__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+
+  .pricing__name {
+    font-style: 16px;
+  }
+
+  .pricing__cost {
+    margin-bottom: 6px;
+
+    font-size: 25px;
   }
 }
 
