@@ -171,3 +171,45 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .cost-included {
+    padding: 232px 284px 354px;
+
+    background-image: url("../img/cost-included/bg-cost-included-desktop.svg"),
+      url("../img/sign-up/bg-sign-up-desktop.svg");
+    background-position: -91px 39px, left -229px bottom -741px;
+  }
+
+  .cost-included__heading {
+    margin-bottom: 66px;
+    text-align: left;
+  }
+
+  .cost-included__list {
+    justify-content: space-between;
+  }
+
+  .cost-included__item {
+    width: 410px;
+    min-height: auto;
+    margin-bottom: 0;
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    &:nth-child(-n + 2) {
+      padding: 56px 40px 48px 160px;
+      margin-bottom: 66px;
+    }
+
+    &--video {
+      padding-bottom: 40px;
+    }
+
+    &--chat {
+      padding-top: 158px;
+    }
+  }
+}
