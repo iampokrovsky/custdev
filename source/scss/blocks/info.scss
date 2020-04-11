@@ -120,7 +120,7 @@
   .info__top {
     flex-direction: row;
     justify-content: space-between;
-    padding: 50px 0 50px;
+    padding: 50px 0;
     padding-right: 16 / 768 * 100%;
     padding-left: 16 / 768 * 100%;
   }
@@ -151,5 +151,25 @@
 
   .info__doc-link {
     text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .info__top {
+    padding: 43px 130px;
+  }
+
+  .info__bottom {
+    padding: 26px 130px;
+  }
+
+  .info__docs {
+    display: flex;
+  }
+
+  .info__doc {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
