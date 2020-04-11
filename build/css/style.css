@@ -222,7 +222,7 @@
 
 @media (min-width: 1440px) {
   .about-teacher {
-    padding: 88px 130px 0;
+    padding: 88px 130px 138px;
   }
 
   .about-teacher__heading {
@@ -2341,6 +2341,106 @@
 
   .reviews__item:not(:last-child) {
     margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .reviews {
+    position: relative;
+
+    padding: 64px 130px 80px;
+
+    background-image: url("../img/reviews/bg-reviews-desktop.svg");
+    background-position: 76px 0;
+  }
+
+  .reviews__heading {
+    font-size: 35px;
+  }
+
+  .reviews__list {
+    position: relative;
+  }
+
+  .reviews__item {
+    width: 560px;
+  }
+
+  .reviews__item:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .reviews__item:not(:last-child) {
+    margin-bottom: 50px;
+  }
+
+  .reviews__content {
+    padding: 40px 40px 50px;
+  }
+
+  .reviews__articles-list {
+    position: absolute;
+    right: 114px;
+    bottom: 34px;
+
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .reviews__article {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 300px;
+    height: 300px;
+    padding: 80px;
+    padding-top: 134px;
+    overflow: hidden;
+
+    text-align: center;
+
+    background-image: url("../img/reviews/reviews-doc-icon.svg"), url("../img/reviews/reviews-article-bg.svg");
+    background-repeat: no-repeat;
+    background-position: top 62px center, center;
+    border-radius: 50%;
+  }
+
+  .reviews__article-heading {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 110px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+    padding: 0;
+
+    font-size: 12px;
+    line-height: 1.44em;
+    font-family: "montserrat-regular", "Arial", sans-serif;
+    color: #2f80ed;
+  }
+
+  .reviews__article-link {
+    display: block;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 64px;
+    margin: 0 auto;
+
+    font-size: 12px;
+    line-height: 1.44em;
+    font-family: "montserrat-regular", "Arial", sans-serif;
+    color: #2f80ed;
+    text-decoration: none;
+
+    background-image: url("../img/reviews/icon-arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center right;
   }
 }
 
