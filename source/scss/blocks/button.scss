@@ -14,19 +14,14 @@
   border-radius: 50px;
   cursor: pointer;
 
-  transition: 0.1s ease-in-out;
+  transition: transform 0.2s ease-in-out;
 
   @include bold(14px, 1.5em, $white);
 
-  // &--border:hover {
-  //   color: #ffffff;
-
-  //   background-color: #444444;
-  // }
-
-  // &--border:active {
-  //   color: rgba(255, 255, 255, 0.3);
-
-  //   background-color: #444444;
-  // }
+  &:hover {
+    transform: scale(1.05);
+  }
+  &:active {
+    transform: scale(0.95);
+  }
 }
