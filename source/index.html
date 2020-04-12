@@ -47,7 +47,7 @@
           <a href="" class="nav__join-button button">Запись на курс</a>
         </nav>
 
-        <section class="promo">
+        <div class="promo">
           <div class="promo__invite">
             <p class="promo__place-n-date">Санкт-Петербург 10-21 мая</p>
             <p class="promo__slogan">
@@ -62,10 +62,10 @@
           <ul class="promo__reviews-list">
             <li class="promo__reviews-item">
               <article class="promo__review">
-                <p class="promo__review-content">
+                <h2 class="promo__review-content">
                   <span class="promo__review-text">Оценка</span>
                   <b class="promo__review-rate">9 из 10</b>
-                </p>
+                </h2>
                 <cite class="promo__review-author">
                   <span class="promo__review-name">Иван Матвиенко</span>
                   <span class="promo__review-company">Wimprof</span>
@@ -74,7 +74,7 @@
               </article>
             </li>
           </ul>
-        </section>
+        </div>
       </div>
     </header>
 
@@ -240,7 +240,7 @@
                 <source
                   media="(min-width: 1440px)"
                   srcset="
-                    ./img/about-teacher/about-teacher-photo-desktop@2x.jpg 1454w,
+                    ./img/about-teacher/about-teacher-photo-desktop@2x.jpg 2x,
                     ./img/about-teacher/about-teacher-photo-desktop@1x.jpg
                   "
                 />
@@ -836,7 +836,7 @@
               <a href="" class="pricing__order-button button">Оформить</a>
             </li>
             <li class="pricing__package">
-              <div class="pricing__description">
+              <div class="pricing__description pricing__description--last">
                 <h3 class="pricing__name">Тариф “Для себя”</h3>
                 <p class="pricing__cost">25 900 ₽</p>
               </div>
@@ -915,6 +915,7 @@
     <footer class="footer">
       <div class="footer__container container">
         <section class="sign-up">
+          <h2 class="visually-hidden">Записаться на курс</h2>
           <form
             class="sign-up__form"
             action="https://echo.htmlacademy.ru"
@@ -930,6 +931,7 @@
         </section>
 
         <section class="info">
+          <h2 class="visually-hidden">Информация</h2>
           <div class="info__top">
             <ul class="info__cities">
               <li class="info__city info__city--current">
@@ -962,6 +964,5 @@
     </footer>
 
     <script src="./js/script.min.js"></script>
-    53.66776826822586‬%
   </body>
 </html>

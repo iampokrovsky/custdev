@@ -136,7 +136,6 @@
     padding: 34px 270px;
   }
 
-
   .pricing__packages {
     justify-content: space-between;
   }
@@ -150,17 +149,13 @@
     }
 
     &:last-child {
-      width: 570px;
       flex-direction: row;
-      margin: 0 auto;
       justify-content: space-between;
+      width: 570px;
+      margin: 0 auto;
       padding: 45px 84px;
     }
   }
-
-   .pricing__package:last-child .pricing__description {
-     margin-bottom: 0;
-   }
 
   .pricing__description {
     display: flex;
@@ -168,16 +163,20 @@
     align-items: center;
     box-sizing: border-box;
     margin-bottom: 40px;
-  }
 
+    &--last {
+      margin-bottom: 0;
+    }
+  }
 
   .pricing__name {
     font-style: 16px;
   }
 
   .pricing__cost {
-    font-size: 25px;
     margin-bottom: 6px;
+
+    font-size: 25px;
   }
 
   .cost-included__video {

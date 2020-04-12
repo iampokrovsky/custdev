@@ -352,7 +352,7 @@
     display: block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
-    min-width: 166px;
+    min-width: 168px;
     margin: 0;
     padding: 0;
     padding-top: 36px;
@@ -476,8 +476,9 @@
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 768px;
-  width: 1440px;
+  width: 320px;
+  width: 100%;
+  max-width: 1440px;
   margin: 0 auto;
   overflow-x: hidden;
 }
@@ -485,11 +486,11 @@
 .cost-included {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 190px 20px 24px;
+  padding: 190px 20px 116px;
 
-  background-image: url("../img/cost-included/bg-cost-included-mobile.svg");
+  background-image: url("../img/cost-included/bg-cost-included-mobile.svg"), url("../img/sign-up/bg-sign-up-mobile.svg");
   background-repeat: no-repeat;
-  background-position: -425px 0;
+  background-position: -425px 0, left -229px bottom -729px;
 }
 
 .cost-included__heading {
@@ -945,7 +946,7 @@
 }
 
 .info__join-button {
-  width: 160px;
+  width: 162px;
   padding: 13px 25px;
 
   font-size: 14px;
@@ -1674,10 +1675,6 @@
     padding: 45px 84px;
   }
 
-  .pricing__package:last-child .pricing__description {
-    margin-bottom: 0;
-  }
-
   .pricing__description {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1692,6 +1689,10 @@
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     margin-bottom: 40px;
+  }
+
+  .pricing__description--last {
+    margin-bottom: 0;
   }
 
   .pricing__name {
@@ -2630,11 +2631,11 @@
 .sign-up {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding: 204px 20px 94px;
+  padding: 110px 20px 94px;
 
   background-image: url("../img/sign-up/bg-sign-up-mobile.svg");
   background-repeat: no-repeat;
-  background-position: -229px 0;
+  background-position: -229px -94px;
 }
 
 .sign-up__input {

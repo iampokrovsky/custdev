@@ -1,10 +1,11 @@
 .sign-up {
   box-sizing: border-box;
-  padding: 204px 20px 94px;
+  padding: 110px 20px 94px;
 
   background-image: url("../img/sign-up/bg-sign-up-mobile.svg");
   background-repeat: no-repeat;
-  background-position: -229px 0;
+  background-position: -229px -94px;
+  // border-top: 1px solid #000;
 }
 
 .sign-up__input {
