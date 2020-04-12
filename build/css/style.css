@@ -1332,10 +1332,6 @@
 }
 
 @media (max-width: 1439px) and (min-width: 768px) {
-  .menu--no-js {
-    margin-right: auto;
-  }
-
   .menu__list {
     top: 20px;
     right: 0.52083%;

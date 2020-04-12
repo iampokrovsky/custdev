@@ -174,12 +174,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    .menu {
-      &--no-js {
-        margin-right: auto;
-      }
-    }
-
     .menu__list {
       top: 20px;
       right: 4 / 768 * 100%;
