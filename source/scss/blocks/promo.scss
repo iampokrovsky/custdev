@@ -125,6 +125,14 @@
   background-position: center right;
 
   @include regular(10px, 1.5em, $blue);
+
+  &:hover {
+    font-weight: bold;
+  }
+
+  &:focus {
+    font-weight: bold;
+  }
 }
 
 @media (min-width: $tablet-width) {

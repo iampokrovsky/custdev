@@ -21,6 +21,11 @@
   &:hover {
     transform: scale(1.05);
   }
+  
+  &:focus {
+    transform: scale(1.05);
+  }
+
   &:active {
     transform: scale(0.95);
   }

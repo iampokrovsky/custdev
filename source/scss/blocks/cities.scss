@@ -58,6 +58,14 @@
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+
+    &:focus {
+      font-weight: bold;
+    }
   }
 }
 
@@ -83,6 +91,10 @@
       font-weight: bold;
     }
 
+    &:focus {
+      font-weight: bold;
+    }
+
     &--current {
       font-weight: bold;
     }
@@ -103,5 +115,13 @@
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;
+
+    &:hover {
+      font-weight: bold;
+    }
+
+    &:focus {
+      font-weight: bold;
+    }
   }
 }

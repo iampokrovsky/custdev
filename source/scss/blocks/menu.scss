@@ -20,7 +20,11 @@
   @include regular(14px, 1.44em, inherit);
 
   &:hover {
-    font-weight: 700;
+    font-weight: bold;
+  }
+
+  &:focus {
+    font-weight: bold;
   }
 
   &:active {

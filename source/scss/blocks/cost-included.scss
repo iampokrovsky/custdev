@@ -1,14 +1,13 @@
 .cost-included {
   box-sizing: border-box;
   // padding: 190px 20px 24px;
-
   padding: 190px 20px 116px;
-
-  // background-image: url("../img/cost-included/bg-cost-included-mobile.svg");
-  background-repeat: no-repeat;
   // background-position: -425px 0;
+
   background-image: url("../img/cost-included/bg-cost-included-mobile.svg"),
     url("../img/sign-up/bg-sign-up-mobile.svg");
+  // background-image: url("../img/cost-included/bg-cost-included-mobile.svg");
+  background-repeat: no-repeat;
   background-position: -425px 0, left -229px bottom -729px;
 }
 

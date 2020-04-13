@@ -1,6 +1,5 @@
 var citiesList = document.querySelector(".cities");
 var cities = document.querySelectorAll(".cities__item");
-var currentCity = document.querySelector(".cities__item--current");
 
 var spb = document.querySelector(".cities__item--spb");
 var msk = document.querySelector(".cities__item--msk");
@@ -18,16 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
   minsk.firstChild.setAttribute("tabindex", 3);
 });
 
-for (var j = 0; j < cities.length; j++) {
-  cities[j].firstChild.onmouseover = function () {
-    citiesList.classList.add("cities--visible");
-  };
-
-  cities[j].firstChild.onmouseout = function () {
-    citiesList.classList.remove("cities--visible");
-  };
-}
-
 for (var m = 0; m < cities.length; m++) {
   cities[m].firstChild.onfocus = function () {
     citiesList.classList.add("cities--visible");
@@ -37,6 +26,19 @@ for (var m = 0; m < cities.length; m++) {
     citiesList.classList.remove("cities--visible");
   };
 }
+
+citiesList.onmouseover = function (event) {
+  if (!citiesList.classList.contains("cities--visible")) {
+    citiesList.classList.add("cities--visible");
+  }
+}
+
+citiesList.onmouseout = function (event) {
+  if (citiesList.classList.contains("cities--visible")) {
+    citiesList.classList.remove("cities--visible");
+  }
+}
+
 
 for (var i = 0; i < cities.length; i++) {
   cities[i].onclick = function (event) {

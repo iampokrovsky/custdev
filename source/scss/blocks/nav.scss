@@ -45,12 +45,22 @@
 
     background: none;
     border: none;
+
     transition: font-weight 0.1s;
     transition: opacity 0.1s;
+
     &:hover {
+      font-weight: bold;
+
       transform: none;
-      font-weight: 700;
     }
+
+    &:focus {
+      font-weight: bold;
+
+      transform: none;
+    }
+
     &:active {
       transform: none;
       opacity: 0.7;

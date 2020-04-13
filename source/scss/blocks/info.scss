@@ -47,6 +47,14 @@
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
+
+  &:hover {
+    font-weight: bold;
+  }
+
+  &:focus{
+    font-weight: bold;
+  }
 }
 
 .info__join-button {
