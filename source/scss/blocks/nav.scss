@@ -11,7 +11,9 @@
 .nav__join-button {
   display: block;
   box-sizing: border-box;
+  width: 164px;
 
+  text-align: left;
   text-transform: none;
 
   @include regular(14px, 1.44em, $white);
@@ -83,6 +85,7 @@
   .nav__join-button {
     padding: 10px 26px;
 
+    text-align: center;
     color: $blue;
 
     background-color: $white;

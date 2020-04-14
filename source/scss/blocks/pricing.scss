@@ -75,6 +75,7 @@
   margin: 0;
 
   font-weight: 600;
+  text-align: center;
 
   @include regular(16px, 1.59em, $blue);
 }
@@ -84,6 +85,8 @@
   box-sizing: border-box;
   margin: 0;
   margin-bottom: 14px;
+
+  text-align: center;
 
   @include bold(20px, 1.59em, $blue);
 }

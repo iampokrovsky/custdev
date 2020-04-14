@@ -31,7 +31,7 @@
 }
 
 .promo__join-button {
-  min-width: 223px;
+  width: 224px;
 
   background-clip: padding-box;
   border: 14px solid rgba(82, 209, 188, 0.5);
@@ -141,6 +141,7 @@
     flex-direction: row-reverse;
     justify-content: flex-end;
     box-sizing: border-box;
+    min-height: 539px;
     padding-left: 28 / 768 * 100%;
     padding-left: calc(-145.983894997123px + 23.63808842511236%);
   }
@@ -170,13 +171,14 @@
   }
 
   .promo__reviews-list {
-    margin-top: 308px;
+    margin-top: auto;
     margin-right: calc(-268.4025473867291px + 40.7321191088627%);
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
+    min-height: 511px;
     padding-left: 55px;
   }
 
@@ -195,7 +197,6 @@
   }
 
   .promo__reviews-list {
-    margin-top: 280px;
     margin-right: 318px;
   }
 }

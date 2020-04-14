@@ -52,12 +52,14 @@
   .cities__link {
     display: block;
     box-sizing: border-box;
+    max-width: 168px;
     padding-right: 22px;
 
     font: inherit;
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;
+    word-wrap: break-word;
 
     &:hover {
       font-weight: bold;

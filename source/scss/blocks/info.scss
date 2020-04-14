@@ -43,7 +43,10 @@
 }
 
 .info__city-link {
+  display: block;
+
   font: inherit;
+  text-align: center;
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
@@ -52,7 +55,7 @@
     font-weight: bold;
   }
 
-  &:focus{
+  &:focus {
     font-weight: bold;
   }
 }
@@ -153,7 +156,12 @@
     padding-left: 16 / 768 * 100%;
   }
 
+  .info__copyright {
+    margin-right: 100px;
+  }
+
   .info__docs {
+    flex-shrink: 0;
     margin-bottom: 0;
   }
 

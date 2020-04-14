@@ -434,12 +434,14 @@
     display: block;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    max-width: 168px;
     padding-right: 22px;
 
     font: inherit;
     color: inherit;
     text-transform: uppercase;
     text-decoration: none;
+    word-wrap: break-word;
   }
 
   .cities__link:hover {
@@ -520,7 +522,6 @@
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  width: 320px;
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
@@ -983,7 +984,10 @@
 }
 
 .info__city-link {
+  display: block;
+
   font: inherit;
+  text-align: center;
   color: inherit;
   text-transform: uppercase;
   text-decoration: none;
@@ -1125,7 +1129,13 @@
     padding-left: 2.08333%;
   }
 
+  .info__copyright {
+    margin-right: 100px;
+  }
+
   .info__docs {
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
     margin-bottom: 0;
   }
 
@@ -1440,10 +1450,12 @@
   display: block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 164px;
 
   font-size: 14px;
   line-height: 1.44em;
   font-family: "montserrat-regular", "Arial", sans-serif;
+  text-align: left;
   color: #ffffff;
   text-transform: none;
 }
@@ -1528,6 +1540,7 @@
   .nav__join-button {
     padding: 10px 26px;
 
+    text-align: center;
     color: #2f80ed;
 
     background-color: #ffffff;
@@ -1652,6 +1665,7 @@
   font-size: 16px;
   line-height: 1.59em;
   font-family: "montserrat-regular", "Arial", sans-serif;
+  text-align: center;
   color: #2f80ed;
 }
 
@@ -1667,6 +1681,7 @@
   font-size: 20px;
   line-height: 1.59em;
   font-family: "montserrat-bold", "Arial", sans-serif;
+  text-align: center;
   color: #2f80ed;
 }
 
@@ -2085,7 +2100,7 @@
 }
 
 .promo__join-button {
-  min-width: 223px;
+  width: 224px;
 
   background-clip: padding-box;
   border: 14px solid rgba(82, 209, 188, 0.5);
@@ -2224,6 +2239,7 @@
             justify-content: flex-end;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
+    min-height: 539px;
     padding-left: 3.64583%;
     padding-left: calc(-145.983894997123px + 23.63808842511236%);
   }
@@ -2253,13 +2269,14 @@
   }
 
   .promo__reviews-list {
-    margin-top: 308px;
+    margin-top: auto;
     margin-right: calc(-268.4025473867291px + 40.7321191088627%);
   }
 }
 
 @media (min-width: 1440px) {
   .promo {
+    min-height: 511px;
     padding-left: 55px;
   }
 
@@ -2278,7 +2295,6 @@
   }
 
   .promo__reviews-list {
-    margin-top: 280px;
     margin-right: 318px;
   }
 }
